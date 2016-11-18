@@ -1,0 +1,58 @@
+#include "ExportData.h"
+
+ExportData::ExportData()
+{   
+}
+void ExportData::writeData()
+{
+    //qDebug()<<"exportFileSlot"<<m_fileName;
+    m_excel = new QExcel(m_fileName);
+      //  qDebug()<<"init done";
+    m_excel->selectSheet("Sheet1");
+      //  qDebug()<<"init done";
+    const int i = 0;
+    m_excel->setCellString(1,i+1,"序号");
+    m_excel->setCellString(1,i+2,"基波模值");
+    m_excel->setCellString(1,i+3,"二次谐波模值");
+    m_excel->setCellString(1,i+4,"三次谐波模值");
+    m_excel->setCellString(1,i+5,"四次谐波模值");
+    m_excel->setCellString(1,i+6,"五次谐波模值");
+    m_excel->setCellString(1,i+7,"六次谐波模值");
+    m_excel->setCellString(1,i+8,"七次谐波模值");
+    //    qDebug()<<"init done";
+    m_excel->save();
+   // qDebug()<<"init done";
+    DataMgr *pDataMgr = DataMgr::Inst();
+    int PixIdx;
+    int n = 0, k;
+    if(0 == pDataMgr->m_VolCurF.cur.size()){
+        return;
+    }
+    int length = (pDataMgr->m_size/pDataMgr->m_CZTPara.pixSmcnt);
+    for(PixIdx=0; PixIdx<length; PixIdx++){
+        for(k=0; k<cMaxHarmnicNum; k++){
+            QString tmp= QString("%1").arg(pDataMgr->m_VolCurF.cur[k][PixIdx]->A);
+            m_excel->setCellString(PixIdx+2,k+2,tmp);
+            n++;
+           emit updateMsg((float)n/cMaxHarmnicNum/(float)length*100,QString("正在导出数据 ..."));
+                   // qDebug()<<"writeData!!"<<n<<(float)n/cMaxHarmnicNum/(float)length*100<<pDataMgr->m_CZTPara.pixSmcnt;
+        }
+        QString tmp= QString("%1").arg(PixIdx);
+        m_excel->setCellString(PixIdx+2,1,tmp);
+    }
+    m_excel->save();
+
+
+    m_excel->close();
+    qDebug()<<"write done!!";
+}
+
+ExportData::~ExportData()
+{
+
+}
+
+void ExportData::run()
+{
+ writeData();
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE mydocument>
+<LoadAnalysisCfg><viewItem K="1" dataType="0" ID="0" CentralAxis="200" viewName="频域电流相位(基波)" PixSmcnp="1" Size="200" Color="65535" VeiwSourName="频域电流相位" Harm="0" VeiwTypeID="14" C="0" VeiwDomaType="-2147483648"/>
+ <viewItem K="0.314" dataType="1" ID="1" CentralAxis="400" viewName="频域电压相位(基波)" PixSmcnp="1" Size="200" Color="65365" VeiwSourName="频域电压相位" Harm="0" VeiwTypeID="18" C="0" VeiwDomaType="0"/>
+ <viewItem K="20" dataType="3" ID="2" CentralAxis="300" viewName="线" PixSmcnp="1" Size="200" Color="8366677" VeiwSourName="线" Harm="0" VeiwTypeID="24" C="100" VeiwDomaType="336"/>
+ <viewItem K="20" dataType="3" ID="3" CentralAxis="100" viewName="线" PixSmcnp="1" Size="200" Color="22015" VeiwSourName="线" Harm="0" VeiwTypeID="24" C="100" VeiwDomaType="1601004916"/>
+ <viewItem K="20" dataType="3" ID="4" CentralAxis="200" viewName="线" PixSmcnp="1" Size="200" Color="16777215" VeiwSourName="线" Harm="0" VeiwTypeID="24" C="100" VeiwDomaType="9662656"/>
+ <viewItem K="20" dataType="3" ID="5" CentralAxis="400" viewName="线" PixSmcnp="1" Size="200" Color="16777215" VeiwSourName="线" Harm="0" VeiwTypeID="24" C="100" VeiwDomaType="1601004916"/>
+</LoadAnalysisCfg>

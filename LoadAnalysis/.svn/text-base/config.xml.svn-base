@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE mydocument>
+<LoadAnalysisCfg><viewItem Harm="7" K="20" ID="0" VeiwTypeID="0" VeiwSourName="时域电流实部" VeiwDomaType="7471216" C="100" CentralAxis="200" dataType="0" Color="16755455" viewName="时域电流实部(时域)" PixSmcnp="1" Size="200"/>
+ <viewItem Harm="0" K="200" ID="1" VeiwTypeID="15" VeiwSourName="频域电流幅值" VeiwDomaType="8" C="0" CentralAxis="400" dataType="0" Color="16755285" viewName="频域电流幅值(基波)" PixSmcnp="1" Size="200"/>
+ <viewItem Harm="2" K="200" ID="2" VeiwTypeID="15" VeiwSourName="频域电流幅值" VeiwDomaType="8" C="0" CentralAxis="600" dataType="0" Color="8366677" viewName="频域电流幅值(三次谐波)" PixSmcnp="1" Size="200"/>
+</LoadAnalysisCfg>
