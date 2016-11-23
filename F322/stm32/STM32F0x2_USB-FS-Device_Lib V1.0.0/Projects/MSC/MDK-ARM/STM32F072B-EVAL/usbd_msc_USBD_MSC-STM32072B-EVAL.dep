@@ -1,0 +1,1261 @@
+Dependencies for Project 'usbd_msc', Target 'USBD_MSC-STM32072B-EVAL': (DO NOT MODIFY !)
+F (..\src\app.c)(0x52EA1594)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\app.o --omf_browse .\stm32f072b-eval\app.crf --depend .\stm32f072b-eval\app.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+I (..\inc\usbd_desc.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_bot.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_scsi.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_data.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_mem.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x52EA1B4E)
+F (..\src\stm32_it.c)(0x52EA1594)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32_it.o --omf_browse .\stm32f072b-eval\stm32_it.crf --depend .\stm32f072b-eval\stm32_it.d)
+I (..\inc\stm32_it.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+F (..\src\usb_bsp.c)(0x52EA1594)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usb_bsp.o --omf_browse .\stm32f072b-eval\usb_bsp.crf --depend .\stm32f072b-eval\usb_bsp.d)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+F (..\src\usbd_desc.c)(0x52EA1594)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_desc.o --omf_browse .\stm32f072b-eval\usbd_desc.crf --depend .\stm32f072b-eval\usbd_desc.d)
+I (..\inc\usbd_desc.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+F (..\src\usbd_pwr.c)(0x52EB40F4)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_pwr.o --omf_browse .\stm32f072b-eval\usbd_pwr.crf --depend .\stm32f072b-eval\usbd_pwr.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+F (..\src\usbd_usr.c)(0x52EA1594)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_usr.o --omf_browse .\stm32f072b-eval\usbd_usr.crf --depend .\stm32f072b-eval\usbd_usr.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_usr.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+F (..\src\usbd_storage_msd.c)(0x52EA1594)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_storage_msd.o --omf_browse .\stm32f072b-eval\usbd_storage_msd.crf --depend .\stm32f072b-eval\usbd_storage_msd.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_mem.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+F (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_msc_bot.c)(0x52EA1B4E)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_msc_bot.o --omf_browse .\stm32f072b-eval\usbd_msc_bot.crf --depend .\stm32f072b-eval\usbd_msc_bot.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_bot.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_scsi.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_data.h)(0x52EA1B4E)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_mem.h)(0x52EA1B4E)
+F (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_msc_core.c)(0x52EA1B4E)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_msc_core.o --omf_browse .\stm32f072b-eval\usbd_msc_core.crf --depend .\stm32f072b-eval\usbd_msc_core.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+I (..\inc\usbd_desc.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_bot.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_scsi.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_data.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_mem.h)(0x52EA1B4E)
+F (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_msc_data.c)(0x52EA1B4E)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_msc_data.o --omf_browse .\stm32f072b-eval\usbd_msc_data.crf --depend .\stm32f072b-eval\usbd_msc_data.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_data.h)(0x52EA1B4E)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+F (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\src\usbd_msc_scsi.c)(0x52EA1B4E)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_msc_scsi.o --omf_browse .\stm32f072b-eval\usbd_msc_scsi.crf --depend .\stm32f072b-eval\usbd_msc_scsi.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_scsi.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_data.h)(0x52EA1B4E)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_bot.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc\usbd_msc_mem.h)(0x52EA1B4E)
+F (..\..\..\Libraries\STM32_USB_Device_Driver\src\usb_core.c)(0x52EB3D80)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usb_core.o --omf_browse .\stm32f072b-eval\usb_core.crf --depend .\stm32f072b-eval\usb_core.d)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+F (..\..\..\Libraries\STM32_USB_Device_Driver\src\usb_dcd.c)(0x52EB3D80)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usb_dcd.o --omf_browse .\stm32f072b-eval\usb_dcd.crf --depend .\stm32f072b-eval\usb_dcd.d)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+F (..\..\..\Libraries\STM32_USB_Device_Driver\src\usb_dcd_int.c)(0x52EB3D80)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usb_dcd_int.o --omf_browse .\stm32f072b-eval\usb_dcd_int.crf --depend .\stm32f072b-eval\usb_dcd_int.d)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+F (..\..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_core.c)(0x52EA1B4E)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_core.o --omf_browse .\stm32f072b-eval\usbd_core.crf --depend .\stm32f072b-eval\usbd_core.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+I (..\inc\usbd_desc.h)(0x52EA1594)
+F (..\..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_ioreq.c)(0x52EA1B4E)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_ioreq.o --omf_browse .\stm32f072b-eval\usbd_ioreq.crf --depend .\stm32f072b-eval\usbd_ioreq.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+F (..\..\..\Libraries\STM32_USB_Device_Library\Core\src\usbd_req.c)(0x52EB3D88)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\usbd_req.o --omf_browse .\stm32f072b-eval\usbd_req.crf --depend .\stm32f072b-eval\usbd_req.d)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_req.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_def.h)(0x52EB3D88)
+I (..\inc\usbd_conf.h)(0x52EA1594)
+I (..\inc\usb_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB2B76)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_core.h)(0x52EA1B4E)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_core.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_regs.h)(0x52EA1AEC)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_dcd_int.h)(0x52EB3D80)
+I (..\..\..\Libraries\STM32_USB_Device_Library\Core\inc\usbd_pwr.h)(0x52EB3D88)
+I (..\..\..\Libraries\STM32_USB_Device_Driver\inc\usb_bsp.h)(0x52EA1AEA)
+I (..\inc\usbd_desc.h)(0x52EA1594)
+F (..\src\system_stm32f0xx.c)(0x52EA15F0)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\system_stm32f0xx.o --omf_browse .\stm32f072b-eval\system_stm32f0xx.crf --depend .\stm32f072b-eval\system_stm32f0xx.d)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\arm\startup_stm32f072.s)(0x52E21B74)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include--pd "__UVISION_VERSION SETA 517" --pd "_RTE_ SETA 1" --pd "STM32F072xB SETA 1"--list .\stm32f072b-eval\startup_stm32f072.lst --xref -o .\stm32f072b-eval\startup_stm32f072.o --depend .\stm32f072b-eval\startup_stm32f072.d)
+F (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.c)(0x52E21B74)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32072b_eval.o --omf_browse .\stm32f072b-eval\stm32072b_eval.crf --depend .\stm32f072b-eval\stm32072b_eval.d)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+F (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.c)(0x52E21B74)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32072b_eval_spi_sd.o --omf_browse .\stm32f072b-eval\stm32072b_eval_spi_sd.crf --depend .\stm32f072b-eval\stm32072b_eval_spi_sd.d)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval_spi_sd.h)(0x52DE2198)
+I (..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL\stm32072b_eval.h)(0x52DE2198)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Utilities\STM32_EVAL\Common\stm32_eval_legacy.h)(0x52DE2196)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_crs.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_crs.o --omf_browse .\stm32f072b-eval\stm32f0xx_crs.crf --depend .\stm32f072b-eval\stm32f0xx_crs.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dma.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_dma.o --omf_browse .\stm32f072b-eval\stm32f0xx_dma.crf --depend .\stm32f072b-eval\stm32f0xx_dma.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_exti.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_exti.o --omf_browse .\stm32f072b-eval\stm32f0xx_exti.crf --depend .\stm32f072b-eval\stm32f0xx_exti.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_flash.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_flash.o --omf_browse .\stm32f072b-eval\stm32f0xx_flash.crf --depend .\stm32f072b-eval\stm32f0xx_flash.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_gpio.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_gpio.o --omf_browse .\stm32f072b-eval\stm32f0xx_gpio.crf --depend .\stm32f072b-eval\stm32f0xx_gpio.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_misc.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_misc.o --omf_browse .\stm32f072b-eval\stm32f0xx_misc.crf --depend .\stm32f072b-eval\stm32f0xx_misc.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_pwr.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_pwr.o --omf_browse .\stm32f072b-eval\stm32f0xx_pwr.crf --depend .\stm32f072b-eval\stm32f0xx_pwr.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_rcc.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_rcc.o --omf_browse .\stm32f072b-eval\stm32f0xx_rcc.crf --depend .\stm32f072b-eval\stm32f0xx_rcc.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_i2c.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_i2c.o --omf_browse .\stm32f072b-eval\stm32f0xx_i2c.crf --depend .\stm32f072b-eval\stm32f0xx_i2c.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_spi.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_spi.o --omf_browse .\stm32f072b-eval\stm32f0xx_spi.crf --depend .\stm32f072b-eval\stm32f0xx_spi.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_syscfg.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_syscfg.o --omf_browse .\stm32f072b-eval\stm32f0xx_syscfg.crf --depend .\stm32f072b-eval\stm32f0xx_syscfg.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
+F (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_usart.c)(0x52E21B76)(-c --cpu Cortex-M0 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\inc -I..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include -I..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Driver\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Core\inc -I..\..\..\Libraries\STM32_USB_Device_Library\Class\msc\inc -I..\..\..\Utilities\STM32_EVAL -I..\..\..\Utilities\STM32_EVAL\Common -I..\..\..\Utilities\STM32_EVAL\STM32072B_EVAL-I "F:\work_\USB_CAM\»À¡≥“«\keil\en.stsw-stm32092\STM32F0x2_USB-FS-Device_Lib V1.0.0\Projects\MSC\MDK-ARM\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include-D__UVISION_VERSION="517" -D_RTE_ -DSTM32F072xB -DUSE_STM32072B_EVAL -DUSE_STDPERIPH_DRIVER -DSTM32F072-o .\stm32f072b-eval\stm32f0xx_usart.o --omf_browse .\stm32f072b-eval\stm32f0xx_usart.crf --depend .\stm32f072b-eval\stm32f0xx_usart.d)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_usart.h)(0x52E21B76)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\stm32f0xx.h)(0x52E21B74)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm0.h)(0x5735959E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB2B80)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x57352EA6)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x57352EA6)
+I (..\..\..\Libraries\CMSIS\Device\ST\\STM32F0xx\Include\system_stm32f0xx.h)(0x52E21B74)
+I (..\inc\stm32f0xx_conf.h)(0x52EA1594)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_adc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_can.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_cec.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_crs.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_comp.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dac.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dbgmcu.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_dma.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_exti.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_flash.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_gpio.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_syscfg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_i2c.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_iwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_pwr.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rcc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_rtc.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_spi.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_tim.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_wwdg.h)(0x52E21B76)
+I (..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc\stm32f0xx_misc.h)(0x52E21B76)
