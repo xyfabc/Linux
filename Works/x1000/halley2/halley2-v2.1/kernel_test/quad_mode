@@ -1,0 +1,1097 @@
+Binary file vmlinux matches
+drivers/sbus/char/jsflash.c:469:	node = prom_searchsiblings(node, "flash-memory");
+drivers/sbus/char/jsflash.c:498:		printk("jsflash: no /flash-memory node, use PROLL >= 12\n");
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:97:		dev_dbg(&flash->spi->dev, "%s, nor_get_chipid\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:103:			dev_err(&flash->spi->dev, "%s, has NOT EFUSE read driver\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:109:		dev_dbg(&flash->spi->dev, "%s, nor_get_info\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:110:		jz_args.pagesize	= flash->pagesize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:111:		jz_args.sectorsize	= flash->sectorsize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:112:		jz_args.chipsize	= flash->chipsize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:118:		dev_dbg(&flash->spi->dev, "%s, nor_erase\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:119:		retval = flash->erase(flash, jz_args.offset, jz_args.c_size);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:125:		dev_dbg(&flash->spi->dev, "%s, nor_write\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:126:		if (jz_args.offset + jz_args.c_size > flash->chipsize) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:127:			dev_err(&flash->spi->dev, "%s, write over out of chip\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:133:			retval = flash->erase(flash, jz_args.offset, jz_args.c_size);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:141:		retval = flash->write(flash, jz_args.offset, data_buf, jz_args.c_size);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:147:		dev_dbg(&flash->spi->dev, "%s, nor_read\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:148:		if (jz_args.offset + jz_args.c_size > flash->chipsize) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:149:			dev_err(&flash->spi->dev, "%s, read over out of chip\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:154:		retval = flash->read(flash, jz_args.offset, data_buf, jz_args.c_size);
+drivers/misc/jz_spi_nor/jz47xx_spi_nordev.c:165:		dev_err(&flash->spi->dev, "%s, NOT defined command: %d\n", __FUNCTION__, cmd);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:31:	struct spi_transfer *x = flash->xfer;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:34:	flash->start.cmd = sel_en ? CMD_WREN : CMD_WRDI;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:36:	spi_node_write_setup(x, flash->spi, (u8 *)&flash->start, 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:39:	return spi_sync(flash->spi, &msg);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:55:	struct spi_transfer *x = flash->xfer;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:60:	if (regnum > flash->statreg_num - 1) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:61:		dev_err(&flash->spi->dev, "read status regnum is invalid.");
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:68:	flash->start.cmd = cmd_rdsr[regnum];
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:70:	spi_node_write_setup(x, flash->spi, (u8 *)&flash->start, 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:74:	spi_node_read_setup(x, flash->spi, &status_reg, 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:77:	err = spi_sync(flash->spi, &msg);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:79:		dev_err(&flash->spi->dev, "read status spi sync error: %d\n", err);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:102:			dev_dbg(&flash->spi->dev, "WIP wait busy timeout, max_busytime: %d ms\n", max_busytime);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:125:	struct spi_transfer *x = flash->xfer;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:131:	flash->start.cmd = CMD_READ;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:132:	serial_flash_address(&flash->start, offset, flash->addrsize);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:134:	spi_node_write_setup(x, flash->spi, (u8 *)&flash->start, flash->addrsize + 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:138:	spi_node_read_setup(x, flash->spi, buf, length);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:142:	ret = spi_sync(flash->spi, &msg);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:144:		dev_dbg(&flash->spi->dev, "%s, spi bus read failed: %d\n", __FUNCTION__, ret);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:166:	struct spi_device *spi = flash->spi;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:194:	struct spi_transfer *x = flash->xfer;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:198:	if (!pagelen || pagelen > flash->pagesize)
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:199:		len = flash->pagesize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:203:	if (offset % flash->pagesize + len > flash->pagesize)
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:204:		len -= offset % flash->pagesize + len - flash->pagesize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:208:	flash->start.cmd = CMD_PP;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:209:	serial_flash_address(&flash->start, offset, flash->addrsize);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:211:	spi_node_write_setup(x, flash->spi, (u8 *)&flash->start, flash->addrsize + 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:215:	spi_node_write_setup(x, flash->spi, buf, len);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:219:	dev_dbg(&flash->spi->dev, "%s, spi bus write len: %d\n", __FUNCTION__, retlen);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:220:	ret = spi_sync(flash->spi, &msg);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:222:		dev_dbg(&flash->spi->dev, "%s, spi bus write failed: %d\n", __FUNCTION__, ret);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:227:	ret = jz_nor_wait_busy(flash, flash->pp_maxbusy);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:229:		dev_dbg(&flash->spi->dev, "%s, write wait busy timeout.\n", __FUNCTION__);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:245:	struct spi_device *spi = flash->spi;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:253:	if (offset + length > flash->chipsize) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:259:		if (length >= flash->pagesize)
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:262:			pagelen = length % flash->pagesize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:285:	struct spi_transfer *x = flash->xfer;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:290:	flash->start.cmd = CMD_SE;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:291:	serial_flash_address(&flash->start, offset, flash->addrsize);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:293:	spi_node_write_setup(x, flash->spi, (u8 *)&flash->start, flash->addrsize + 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:296:	err = spi_sync(flash->spi, &msg);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:297:	jz_nor_wait_busy(flash, flash->se_maxbusy);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:310:	struct spi_transfer * x = flash->xfer;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:315:	flash->start.cmd = flash->block_info[block_mode].cmd_blockerase;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:316:	serial_flash_address(&flash->start, offset, flash->addrsize);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:318:	spi_node_write_setup(x, flash->spi, (u8 *)&flash->start, flash->addrsize + 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:321:	err = spi_sync(flash->spi, &msg);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:322:	jz_nor_wait_busy(flash, flash->block_info[block_mode].be_maxbusy);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:333:	struct spi_transfer *x = flash->xfer;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:338:	flash->start.cmd = CMD_CE;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:340:	spi_node_write_setup(x, flash->spi, (u8 *)&flash->start, 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:343:	err = spi_sync(flash->spi, &msg);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:344:	jz_nor_wait_busy(flash, flash->ce_maxbusy);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:356:	struct spi_device *spi = flash->spi;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:360:	if (!len || !flash->sectorsize) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:365:	if (offset % flash->sectorsize) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:367:		offset = offset / flash->sectorsize * flash->sectorsize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:370:	if (offset == 0 && len >= flash->chipsize) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:376:	if (offset + len > flash->chipsize) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:387:		for (i = 0; !flag && i < flash->num_block_info; i++) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:388:			blocksize = flash->block_info[i].blocksize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:398:			if (!(offset % flash->sectorsize)) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:399:				erase_block = flash->sectorsize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:422:	struct spi_transfer *x = flash->xfer;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:426:	flash->start.cmd = CMD_RDID;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:428:	spi_node_write_setup(x, flash->spi, (u8 *)&flash->start, 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:432:	spi_node_read_setup(x, flash->spi, id_buf, 3);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:435:	return spi_sync(flash->spi, &msg);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:463:	flash->spi		= spi;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:464:	flash->pagesize		= pdata->pagesize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:465:	flash->sectorsize	= pdata->sectorsize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:466:	flash->block_info	= pdata->block_info;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:467:	flash->num_block_info	= pdata->num_block_info;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:468:	flash->chipsize		= pdata->chipsize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:469:	flash->addrsize		= pdata->addrsize;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:470:	flash->statreg_num	= pdata->st_regnum;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:471:	flash->pp_maxbusy	= pdata->pp_maxbusy;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:472:	flash->se_maxbusy	= pdata->se_maxbusy;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:473:	flash->ce_maxbusy	= pdata->ce_maxbusy;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:475:	flash->read		= jz_nor_read;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:476:	flash->write		= jz_nor_write;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:477:	flash->erase		= jz_nor_erase;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:479:	flash->get_status	= jz_nor_read_status;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:481:	if (flash->addrsize > MAX_ADDR_SIZE) {
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:482:		dev_err(&spi->dev, "flash addrsize: %dBytes invalid.\n", flash->addrsize);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:487:	//mutex_init(&flash->lock);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:496:	flash->start.cmd = 0x00;
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:497:	serial_flash_address(&flash->start, 0x44332211, 1);
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:500:		dev_info(&spi->dev, "flash->start:\t");
+drivers/misc/jz_spi_nor/jz47xx_spi_nor.c:502:			printk("0x%02x ", ((u8 *)&flash->start)[i]);
+drivers/hwmon/max16065.c:3: *  Maxim MAX16065/MAX16066 12-Channel/8-Channel, Flash-Configurable
+drivers/hwmon/max16065.c:5: *  Maxim MAX16067/MAX16068 6-Channel, Flash-Configurable System Managers
+drivers/hwmon/max16065.c:7: *  Maxim MAX16070/MAX16071 12-Channel/8-Channel, Flash-Configurable System
+drivers/spi/spi_butterfly.c:289:				dev_name(&pp->dataflash->dev));
+drivers/nand/driver/nand_api.c:881:	cinfo->manuf = ndflash->id >> 8;
+drivers/nand/driver/nand_api.c:882:	cinfo->pagesize = ndflash->pagesize;
+drivers/nand/driver/nand_api.c:883:	cinfo->oobsize = ndflash->oobsize;
+drivers/nand/driver/nand_api.c:884:	cinfo->ppblock = ndflash->blocksize / ndflash->pagesize;
+drivers/nand/driver/nand_api.c:885:	cinfo->maxvalidblocks = ndflash->maxvalidblocks / ndflash->chips;
+drivers/nand/driver/nand_api.c:887:	cinfo->planepdie = ndflash->planepdie;
+drivers/nand/driver/nand_api.c:888:	cinfo->totaldies = ndflash->diepchip;
+drivers/nand/driver/nand_api.c:889:	cinfo->origbadblkpos = ndflash->badblockpos;
+drivers/nand/driver/nand_api.c:890:	cinfo->badblkpos = ndflash->oobsize - 4;
+drivers/nand/driver/nand_api.c:892:	cinfo->buswidth = ndflash->buswidth;
+drivers/nand/driver/nand_api.c:893:	cinfo->rowcycles = ndflash->rowcycles;
+drivers/nand/driver/nand_api.c:894:	cinfo->eccbit = ndflash->eccbit;
+drivers/nand/driver/nand_api.c:895:	cinfo->planenum = ndflash->realplanenum > 2 ? 2 : ndflash->realplanenum;
+drivers/nand/driver/nand_api.c:896:	cinfo->planeoffset = ndflash->planeoffset;
+drivers/nand/driver/nand_api.c:897:	cinfo->options = ndflash->options;
+drivers/nand/driver/nand_api.c:913:	//cinfo->timing = &(ndflash->timing);
+drivers/nand/driver/nand_api.c:985:	ndflash->id = src_parms->id;
+drivers/nand/driver/nand_api.c:986:	ndflash->extid = src_parms->extid;
+drivers/nand/driver/nand_api.c:987:	ndflash->pagesize = src_parms->pagesize;
+drivers/nand/driver/nand_api.c:988:	ndflash->oobsize = src_parms->oobsize;
+drivers/nand/driver/nand_api.c:989:	ndflash->blocksize = src_parms->blocksize;
+drivers/nand/driver/nand_api.c:990:	ndflash->totalblocks = src_parms->totalblocks;
+drivers/nand/driver/nand_api.c:991:	ndflash->maxvalidblocks = src_parms->maxvalidblocks;
+drivers/nand/driver/nand_api.c:992:	ndflash->eccbit = src_parms->eccbit;
+drivers/nand/driver/nand_api.c:993:	ndflash->planepdie = src_parms->planepdie;
+drivers/nand/driver/nand_api.c:994:	ndflash->diepchip = src_parms->diepchip;
+drivers/nand/driver/nand_api.c:995:	ndflash->chips = src_parms->chips;
+drivers/nand/driver/nand_api.c:996:	ndflash->buswidth = src_parms->buswidth;
+drivers/nand/driver/nand_api.c:997:	ndflash->realplanenum = src_parms->realplanenum;
+drivers/nand/driver/nand_api.c:998:	ndflash->badblockpos = src_parms->badblockpos;
+drivers/nand/driver/nand_api.c:999:	ndflash->rowcycles = src_parms->rowcycles;
+drivers/nand/driver/nand_api.c:1000:	ndflash->planeoffset = src_parms->planeoffset;
+drivers/nand/driver/nand_api.c:1001:	ndflash->options = src_parms->options;
+drivers/nand/driver/nand_api.c:1017:	if(ndflash->pagesize >= DEFAULT_ECCSIZE)
+drivers/nand/driver/nand_api.c:1284:	if (ndflash->pagesize >= DEFAULT_ECCSIZE)
+drivers/nand/driver/nand_api.c:1341:			nddata->cinfo->maxvalidblocks = ndflash->maxvalidblocks / ndflash->chips;
+drivers/nand/driver/utils/nand_debug.c:52:	ndd_print(NDD_DEBUG, "ndflash->id: 0x%08x\n", ndflash->id);
+drivers/nand/driver/utils/nand_debug.c:53:	ndd_print(NDD_DEBUG, "ndflash->extid: 0x%08x\n", ndflash->extid);
+drivers/nand/driver/utils/nand_debug.c:54:	ndd_print(NDD_DEBUG, "ndflash->pagesize: %d\n", ndflash->pagesize);
+drivers/nand/driver/utils/nand_debug.c:55:	ndd_print(NDD_DEBUG, "ndflash->oobsize: %d\n", ndflash->oobsize);
+drivers/nand/driver/utils/nand_debug.c:56:	ndd_print(NDD_DEBUG, "ndflash->blocksize: %d\n", ndflash->blocksize);
+drivers/nand/driver/utils/nand_debug.c:57:	ndd_print(NDD_DEBUG, "ndflash->totalblocks: %d\n", ndflash->totalblocks);
+drivers/nand/driver/utils/nand_debug.c:58:	ndd_print(NDD_DEBUG, "ndflash->maxvalidblocks: %d\n", ndflash->maxvalidblocks);
+drivers/nand/driver/utils/nand_debug.c:59:	ndd_print(NDD_DEBUG, "ndflash->eccbit: %d\n", ndflash->eccbit);
+drivers/nand/driver/utils/nand_debug.c:60:	ndd_print(NDD_DEBUG, "ndflash->planepdie: %d\n", ndflash->planepdie);
+drivers/nand/driver/utils/nand_debug.c:61:	ndd_print(NDD_DEBUG, "ndflash->diepchip: %d\n", ndflash->diepchip);
+drivers/nand/driver/utils/nand_debug.c:62:	ndd_print(NDD_DEBUG, "ndflash->chips: %d\n", ndflash->chips);
+drivers/nand/driver/utils/nand_debug.c:63:	ndd_print(NDD_DEBUG, "ndflash->buswidth: %d\n", ndflash->buswidth);
+drivers/nand/driver/utils/nand_debug.c:64:	ndd_print(NDD_DEBUG, "ndflash->realplanenum: %d\n", ndflash->realplanenum);
+drivers/nand/driver/utils/nand_debug.c:65:	ndd_print(NDD_DEBUG, "ndflash->badblockpos: %d\n", ndflash->badblockpos);
+drivers/nand/driver/utils/nand_debug.c:66:	ndd_print(NDD_DEBUG, "ndflash->rowcycles: %d\n", ndflash->rowcycles);
+drivers/nand/driver/utils/nand_debug.c:67:	ndd_print(NDD_DEBUG, "ndflash->planeoffset: %d\n", ndflash->planeoffset);
+drivers/nand/driver/utils/nand_debug.c:68:	ndd_print(NDD_DEBUG, "ndflash->options: 0x%08x\n", ndflash->options);
+drivers/nand/driver/chips/nand_errpt.c:161:		offset /= (ndflash->buswidth / 8);
+drivers/nand/driver/chips/nand_errpt.c:162:		if(ndflash->pagesize != 512)
+drivers/nand/driver/chips/nand_errpt.c:169:		nand_io_send_spec_addr(io_context, pageid, ndflash->rowcycles, delay);
+drivers/nand/driver/chips/nand_errpt.c:176:	if(ndflash->pagesize != 512)
+drivers/nand/driver/chips/nand_errpt.c:205:	unsigned int badblockpos = (ndflash->pagesize != 512) ? ndflash->pagesize + ndflash->oobsize - 4 : ndflash->oobsize - 4;
+drivers/nand/driver/chips/nand_errpt.c:208:	if(ndflash->pagesize != 512)
+drivers/nand/driver/chips/nand_errpt.c:215:	if(ndflash->pagesize != 512)
+drivers/nand/driver/chips/nand_errpt.c:242:	unsigned int badblockpos = (ndflash->pagesize != 512) ? ndflash->pagesize + ndflash->oobsize - 4 : ndflash->oobsize - 4;
+drivers/nand/driver/chips/nand_errpt.c:245:	if(ndflash->pagesize != 512)
+drivers/nand/driver/chips/nand_errpt.c:252:	if(ndflash->pagesize != 512)
+drivers/nand/driver/chips/nand_errpt.c:278:	unsigned int badblockpos = (ndflash->pagesize != 512) ? ndflash->pagesize + ndflash->oobsize - 4 : ndflash->oobsize - 4;
+drivers/nand/driver/chips/nand_errpt.c:281:	if (ndflash->pagesize == 512)
+drivers/nand/driver/chips/nand_errpt.c:343:	int pageid = blockid * (ndflash->blocksize / ndflash->pagesize);
+drivers/nand/driver/chips/nand_errpt.c:344:	unsigned int ppblock = ndflash->blocksize / ndflash->pagesize;
+drivers/nand/driver/chips/nand_errpt.c:372:	int pageid = blockid * (ndflash->blocksize / ndflash->pagesize);
+drivers/nand/driver/chips/nand_errpt.c:400:	unsigned int blockpchip = ndflash->totalblocks / ndflash->chips;
+drivers/nand/driver/chips/nand_errpt.c:413:						unsigned int blk_start = ndd_div_s64_32((ptitem + pt_index)->offset, ndflash->blocksize);
+drivers/nand/driver/chips/nand_errpt.c:414:						unsigned int blk_end = ndd_div_s64_32(((ptitem + pt_index)->offset + (ptitem + pt_index)->size),ndflash->blocksize);
+drivers/nand/driver/chips/nand_errpt.c:453:	unsigned int blockpchip = ndflash->totalblocks / ndflash->chips;
+drivers/nand/driver/chips/nand_errpt.c:488:	unsigned int blockpchip = ndflash->totalblocks / ndflash->chips;
+drivers/nand/driver/chips/nand_errpt.c:527:	int oobsize = ndflash->oobsize;
+drivers/nand/driver/chips/nand_errpt.c:528:	int eccsteps = ndflash->pagesize / eccsize;
+drivers/nand/driver/chips/nand_errpt.c:529:	int eccbytes = 14 * ndflash->eccbit / 8;
+drivers/nand/driver/chips/nand_errpt.c:533:	if (ndflash->pagesize == 512)
+drivers/nand/driver/chips/nand_errpt.c:581:	ndd_memset(nd_errpt_info.bchbuf,0xff,ndflash->oobsize);
+drivers/nand/driver/chips/nand_errpt.c:600:	int oobsize = ndflash->oobsize;
+drivers/nand/driver/chips/nand_errpt.c:601:	int eccsteps = ndflash->pagesize / eccsize;
+drivers/nand/driver/chips/nand_errpt.c:602:	int eccbytes = 14 * ndflash->eccbit / 8;
+drivers/nand/driver/chips/nand_errpt.c:611:		ret = nand_bch_encode_prepare(nd_errpt_info.bch_context, &pipenode, ndflash->eccbit);
+drivers/nand/driver/chips/nand_errpt.c:658:	if(bitcount < ndflash->eccbit){
+drivers/nand/driver/chips/nand_errpt.c:659:		ndd_debug("allff----->bitcount[%d] eccbit[%d]\n",bitcount,ndflash->eccbit);
+drivers/nand/driver/chips/nand_errpt.c:710:	if(bitcount < ndflash->eccbit){
+drivers/nand/driver/chips/nand_errpt.c:711:		ndd_debug("allff----->bitcount[%d] eccbit[%d]\n",bitcount,ndflash->eccbit);
+drivers/nand/driver/chips/nand_errpt.c:732:	int pagesize = ndflash->pagesize;
+drivers/nand/driver/chips/nand_errpt.c:735:	int eccbytes = 14 * ndflash->eccbit / 8;
+drivers/nand/driver/chips/nand_errpt.c:771:		if(bitcount < ndflash->eccbit){
+drivers/nand/driver/chips/nand_errpt.c:772:			ndd_debug("allff----->offset[%d] bitcount[%d] eccbit[%d]\n",i*eccsize,bitcount,ndflash->eccbit);
+drivers/nand/driver/chips/nand_errpt.c:776:		ret = nand_bch_decode_prepare(nd_errpt_info.bch_context, &pipenode, ndflash->eccbit);
+drivers/nand/driver/chips/nand_errpt.c:805:	for(blkid = ndflash->totalblocks / ndflash->chips - 1; blkid > 0; blkid--){
+drivers/nand/driver/chips/nand_errpt.c:817:	ndflash->maxvalidblocks = ndflash->totalblocks - (badblockcnt + ERRPT_BLCOK_CNT) * ndflash->chips;
+drivers/nand/driver/chips/nand_errpt.c:818:	nddata->cinfo->maxvalidblocks = ndflash->maxvalidblocks / ndflash->chips;
+drivers/nand/driver/chips/nand_errpt.c:905:	startblk = ndd_div_s64_32((ptitem->offset + ndflash->blocksize - 1), ndflash->blocksize);
+drivers/nand/driver/chips/nand_errpt.c:906:	totalblocks = ndd_div_s64_32((ptitem->size + ndflash->blocksize - 1), ndflash->blocksize * planes);
+drivers/nand/driver/chips/nand_errpt.c:909:									(unsigned int)(ptitem->size), ndflash->blocksize * planes);
+drivers/nand/driver/chips/nand_errpt.c:1207:	int ept_startblk = ndflash->totalblocks / ndflash->chips - 1;
+drivers/nand/driver/chips/nand_errpt.c:1208:	int ept_endblk = ndflash->maxvalidblocks / ndflash->chips - 1;
+drivers/nand/driver/chips/nand_errpt.c:1265:	int ept_startblk = ndflash->totalblocks / ndflash->chips - 1;
+drivers/nand/driver/chips/nand_errpt.c:1266:	int ept_endblk = ndflash->maxvalidblocks / ndflash->chips - 1;
+drivers/nand/driver/chips/nand_errpt.c:1333:	int ppblock = ndflash->blocksize / ndflash->pagesize;
+drivers/nand/driver/chips/nand_errpt.c:1334:	int errpt_startblk = ndflash->totalblocks / ndflash->chips -1;
+drivers/nand/driver/chips/nand_errpt.c:1335:	int errpt_endblk = ndflash->maxvalidblocks / ndflash->chips- 1;
+drivers/nand/driver/chips/nand_errpt.c:1338:	nand_io_bch_open(nddata->base, NULL, nddata->eccsize, ndflash->buswidth);
+drivers/nand/driver/chips/nand_errpt.c:1340:	databuf = ndd_alloc(ndflash->pagesize);
+drivers/nand/driver/chips/nand_errpt.c:1439:	int errpt_startblk = ndflash->totalblocks / ndflash->chips -1;
+drivers/nand/driver/chips/nand_errpt.c:1442:	nand_io_bch_open(nddata->base, nddata->cinfo, nddata->eccsize, ndflash->buswidth);
+drivers/nand/driver/chips/nand_errpt.c:1510:	nand_io_bch_open(nddata->base, nddata->cinfo, nddata->eccsize, ndflash->buswidth);
+drivers/nand/driver/chips/nand_errpt.c:1573:	ept_startblk = ndflash->totalblocks / ndflash->chips - 1;
+drivers/nand/driver/chips/nand_errpt.c:1574:	ept_endblk = ndflash->maxvalidblocks / ndflash->chips - 1;
+drivers/nand/driver/chips/nand_errpt.c:1635:	nand_io_bch_open(nddata->base, nddata->cinfo, nddata->eccsize, ndflash->buswidth);
+drivers/nand/driver/chips/nand_errpt.c:1668:	nd_errpt_info.bchbuf = ndd_alloc(ndflash->oobsize);
+drivers/nand/driver/inc/nand_chip.h:21: * nand_flash->options bitmap,
+drivers/nand/driver/hw/nand_io_nfi.c:703:	convert2opstiming(&cinfo->ops_timing, &ndflash->timing);
+drivers/nand/driver/hw/nand_io_nfi.c:704:	cinfo->ops_timing.io_etiming = &ndflash->nand_extra;
+drivers/nand/driver/hw/nand_io_emc.c:362:	convert2opstiming(&cinfo->ops_timing, &ndflash->timing);
+drivers/nand/driver/hw/nand_io_emc.c:363:	cinfo->ops_timing.io_etiming = &ndflash->nand_extra;
+drivers/staging/usbip/userspace/usb.ids:610:	0323  5932-USB Enhanced Keyboard, Flash-Recovery/Download
+drivers/staging/usbip/userspace/usb.ids:612:	0325  5953-USB Enhanced Dynakey Flash-Recovery/Download
+drivers/staging/usbip/userspace/usb.ids:616:	032b  K016/K018: USB-MSR Flash-Recovery/Download
+drivers/staging/usbip/userspace/usb.ids:6434:	5153  Cruzer USB-Flash-Drive
+drivers/staging/ft1000/Kconfig:11:	  Say Y if you want to have support for Qleadtek FLASH-OFDM USB Modem [LR7F04],
+drivers/mtd/maps/pxa2xx-flash.c:66:	info->map.name = (char *) flash->name;
+drivers/mtd/maps/pxa2xx-flash.c:67:	info->map.bankwidth = flash->width;
+drivers/mtd/maps/pxa2xx-flash.c:91:	info->mtd = do_map_probe(flash->map_name, &info->map);
+drivers/mtd/maps/pxa2xx-flash.c:101:	mtd_device_parse_register(info->mtd, probes, NULL, flash->parts,
+drivers/mtd/maps/pxa2xx-flash.c:102:				  flash->nr_parts);
+drivers/mtd/nand/jz_sfcnand.c:88:	flash->ioarea = request_mem_region(res->start, resource_size(res),pdev->name);
+drivers/mtd/nand/jz_sfcnand.c:89:	if (flash->ioarea == NULL) {
+drivers/mtd/nand/jz_sfcnand.c:94:	flash->phys = res->start;
+drivers/mtd/nand/jz_sfcnand.c:95:	flash->iomem = ioremap(res->start, (res->end - res->start)+1);
+drivers/mtd/nand/jz_sfcnand.c:96:	if (flash->iomem == NULL){
+drivers/mtd/nand/jz_sfcnand.c:101:	flash->irq = platform_get_irq(pdev, 0);
+drivers/mtd/nand/jz_sfcnand.c:102:	if (flash->irq <= 0) {
+drivers/mtd/nand/jz_sfcnand.c:107:	flash->clk = clk_get(&pdev->dev, "cgu_ssi");
+drivers/mtd/nand/jz_sfcnand.c:108:	if (IS_ERR(flash->clk)) {
+drivers/mtd/nand/jz_sfcnand.c:113:	flash->clk_gate = clk_get(&pdev->dev, "sfc");
+drivers/mtd/nand/jz_sfcnand.c:114:	if (IS_ERR(flash->clk_gate)) {
+drivers/mtd/nand/jz_sfcnand.c:126:	flash->src_clk = res->start * 1000000;
+drivers/mtd/nand/jz_sfcnand.c:128:	if (clk_get_rate(flash->clk) >= flash->src_clk) {
+drivers/mtd/nand/jz_sfcnand.c:129:		clk_set_rate(flash->clk, flash->src_clk);
+drivers/mtd/nand/jz_sfcnand.c:131:		clk_set_rate(flash->clk, flash->src_clk);
+drivers/mtd/nand/jz_sfcnand.c:134:	clk_enable(flash->clk);
+drivers/mtd/nand/jz_sfcnand.c:135:	clk_enable(flash->clk_gate);
+drivers/mtd/nand/jz_sfcnand.c:144:	sfc_set_length(flash, flash->sfc_tran->len);
+drivers/mtd/nand/jz_sfcnand.c:146:	sfc_set_addr_length(flash, 0, flash->sfc_tran->sfc_cmd.addr_len);//
+drivers/mtd/nand/jz_sfcnand.c:148:	sfc_write_cmd(flash, 0, flash->sfc_tran->sfc_cmd.cmd);
+drivers/mtd/nand/jz_sfcnand.c:149:	sfc_data_en(flash, 0, flash->sfc_tran->date_en);
+drivers/mtd/nand/jz_sfcnand.c:150:	sfc_mode(flash,0,flash->sfc_tran->sfc_cmd.transmode);
+drivers/mtd/nand/jz_sfcnand.c:151:	sfc_dev_addr(flash, 0, flash->sfc_tran->sfc_cmd.addr_low);
+drivers/mtd/nand/jz_sfcnand.c:152:	sfc_dev_addr_plus(flash, 0, flash->sfc_tran->sfc_cmd.addr_high);
+drivers/mtd/nand/jz_sfcnand.c:153:	sfc_dev_addr_dummy_bytes(flash,0,flash->sfc_tran->sfc_cmd.dummy_byte);
+drivers/mtd/nand/jz_sfcnand.c:154:	//sfc_dev_pollen(flash,0,flash->sfc_tran->pollen);
+drivers/mtd/nand/jz_sfcnand.c:155:	if(flash->sfc_tran->rw_mode & R_MODE)
+drivers/mtd/nand/jz_sfcnand.c:157:		if((flash->use_dma ==1)&&(flash->sfc_tran->dma_mode)){
+drivers/mtd/nand/jz_sfcnand.c:158:			dma_cache_sync(NULL, (void *)(flash->sfc_tran->rx_buf), flash->sfc_tran->len, DMA_FROM_DEVICE);
+drivers/mtd/nand/jz_sfcnand.c:159:			sfc_set_mem_addr(flash, GET_PHYADDR(flash->sfc_tran->rx_buf));
+drivers/mtd/nand/jz_sfcnand.c:166:	}else if(flash->sfc_tran->rw_mode & W_MODE)
+drivers/mtd/nand/jz_sfcnand.c:168:		if((flash->use_dma ==1)&&(flash->sfc_tran->dma_mode)){
+drivers/mtd/nand/jz_sfcnand.c:169:			dma_cache_sync(NULL, (void *)(flash->sfc_tran->tx_buf), flash->sfc_tran->len,DMA_TO_DEVICE);
+drivers/mtd/nand/jz_sfcnand.c:170:			sfc_set_mem_addr(flash, GET_PHYADDR(flash->sfc_tran->tx_buf));
+drivers/mtd/nand/jz_sfcnand.c:193:		dev_info(flash->dev, "the tx and rx buf of spi_transfer is NULL !\n");
+drivers/mtd/nand/jz_sfcnand.c:205:	spin_lock_irqsave(&flash->lock_rxtx, flags);
+drivers/mtd/nand/jz_sfcnand.c:206:	flash->sfc_tran=t;
+drivers/mtd/nand/jz_sfcnand.c:209:		dev_err(flash->dev,"data transfer error!,please check the cmd,and the driver do not support spi nand      flash\n");
+drivers/mtd/nand/jz_sfcnand.c:212:		spin_unlock_irqrestore(&flash->lock_rxtx, flags);
+drivers/mtd/nand/jz_sfcnand.c:215:	spin_unlock_irqrestore(&flash->lock_rxtx, flags);
+drivers/mtd/nand/jz_sfcnand.c:216:	err = wait_for_completion_timeout(&flash->done,10*HZ);
+drivers/mtd/nand/jz_sfcnand.c:218:		dev_err(flash->dev, "Timeout for ACK from SFC device\n");
+drivers/mtd/nand/jz_sfcnand.c:223:	if(flash->sfc_tran->rw_mode & R_MODE)
+drivers/mtd/nand/jz_sfcnand.c:224:		dma_cache_sync(NULL, (void *)flash->sfc_tran->rx_buf, flash->sfc_tran->len, DMA_FROM_DEVICE);
+drivers/mtd/nand/jz_sfcnand.c:226:	if(flash->use_dma == 1)
+drivers/mtd/nand/jz_sfcnand.c:228:		flash->sfc_tran->finally_len=flash->sfc_tran->len;
+drivers/mtd/nand/jz_sfcnand.c:238:		dev_err(flash->dev, "sfc UNDR !\n");
+drivers/mtd/nand/jz_sfcnand.c:239:		complete(&flash->done);
+drivers/mtd/nand/jz_sfcnand.c:244:		dev_err(flash->dev, "sfc OVER !\n");
+drivers/mtd/nand/jz_sfcnand.c:245:		complete(&flash->done);
+drivers/mtd/nand/jz_sfcnand.c:258:		complete(&flash->done);
+drivers/mtd/nand/jz_sfcnand.c:262:	  clk_put(flash->clk_gate);
+drivers/mtd/nand/jz_sfcnand.c:263:	  clk_put(flash->clk);
+drivers/mtd/nand/jz_sfcnand.c:265:free_irq(flash->irq, flash);
+drivers/mtd/nand/jz_sfcnand.c:267:iounmap(flash->iomem);
+drivers/mtd/nand/jz_sfcnand.c:270:release_resource(flash->ioarea);
+drivers/mtd/nand/jz_sfcnand.c:271:kfree(flash->ioarea);
+drivers/mtd/nand/jz_sfcnand.c:281:	return flash->irq_callback(flash);
+drivers/mtd/nand/jz_sfcnand.c:290:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:292:	number_spi_flash=((struct jz_spi_nand_platform_data *)(flash->pdata->board_info))->num_spi_flash;
+drivers/mtd/nand/jz_sfcnand.c:293:	jz_spi_nand_support_table=((struct jz_spi_nand_platform_data *)(flash->pdata->board_info))->jz_spi_support;
+drivers/mtd/nand/jz_sfcnand.c:301:	flash->use_dma=1;
+drivers/mtd/nand/jz_sfcnand.c:344:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:358:	sfc_threshold(flash, flash->threshold);
+drivers/mtd/nand/jz_sfcnand.c:364:	if(flash->src_clk >= 100000000){
+drivers/mtd/nand/jz_sfcnand.c:367:	flash->swap_buf = kmalloc(SFC_SWAP_BUF_SIZE ,GFP_KERNEL);
+drivers/mtd/nand/jz_sfcnand.c:368:	if(flash->swap_buf == NULL){
+drivers/mtd/nand/jz_sfcnand.c:369:		dev_err(flash->dev,"alloc mem error\n");
+drivers/mtd/nand/jz_sfcnand.c:373:	flash->use_dma = 1;
+drivers/mtd/nand/jz_sfcnand.c:375:	flash->irq_callback = &jz_sfc_pio_irq_callback;
+drivers/mtd/nand/jz_sfcnand.c:452:	transfer[0].tx_buf = flash->swap_buf;
+drivers/mtd/nand/jz_sfcnand.c:493:	switch(flash->column_cmdaddr_bits){
+drivers/mtd/nand/jz_sfcnand.c:570:	flash->use_dma=1;
+drivers/mtd/nand/jz_sfcnand.c:633:	flash->use_dma=1;
+drivers/mtd/nand/jz_sfcnand.c:652:	int page = addr / flash->mtd.writesize;
+drivers/mtd/nand/jz_sfcnand.c:655:	switch(flash->mtd.erasesize){
+drivers/mtd/nand/jz_sfcnand.c:670:	flash->use_dma=1;
+drivers/mtd/nand/jz_sfcnand.c:683:	//	msleep((flash->tBERS + 999) / 1000);
+drivers/mtd/nand/jz_sfcnand.c:712:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:726:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:776:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:782:		ret = jz_sfc_nandflash_read_ops(flash,flash->swap_buf,page,column,rlen,&rel_rlen);
+drivers/mtd/nand/jz_sfcnand.c:783:		memcpy(buffer,flash->swap_buf,rlen);
+drivers/mtd/nand/jz_sfcnand.c:794:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:816:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:821:		memcpy(flash->swap_buf,buffer,wlen);
+drivers/mtd/nand/jz_sfcnand.c:833:		udelay(flash->tPROG);
+drivers/mtd/nand/jz_sfcnand.c:857:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:871:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:895:		ret=jz_sfc_nand_read_cmd(flash,flash->swap_buf,0,mtd->writesize);
+drivers/mtd/nand/jz_sfcnand.c:897:		memcpy(ops->datbuf,flash->swap_buf,readlen);
+drivers/mtd/nand/jz_sfcnand.c:899:	jz_sfc_nand_read_cmd(flash,flash->swap_buf+readlen,mtd->writesize+ops->ooboffs,ops->ooblen);
+drivers/mtd/nand/jz_sfcnand.c:900:	memcpy(ops->oobbuf,flash->swap_buf+readlen,ops->ooblen);
+drivers/mtd/nand/jz_sfcnand.c:903:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:922:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:923:	memcpy(flash->swap_buf,ops->oobbuf,ops->ooblen);
+drivers/mtd/nand/jz_sfcnand.c:931:	ret=jz_sfc_nand_pro_random_cmd(flash,flash->swap_buf,column,ops->ooblen);
+drivers/mtd/nand/jz_sfcnand.c:952:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:1073:	/* Update flash-based bad block table */
+drivers/mtd/nand/jz_sfcnand.c:1183:		flash->column_cmdaddr_bits=24;
+drivers/mtd/nand/jz_sfcnand.c:1185:			flash->column_cmdaddr_bits=32;
+drivers/mtd/nand/jz_sfcnand.c:1226:	struct jz_sfc_nand *flash;//flash->board_info是jz_spi_nand_platform_data
+drivers/mtd/nand/jz_sfcnand.c:1250:	flash->dev = &pdev->dev;
+drivers/mtd/nand/jz_sfcnand.c:1251:	flash->pdata = pdev->dev.platform_data;
+drivers/mtd/nand/jz_sfcnand.c:1252:	/*	if (flash->pdata == NULL) {
+drivers/mtd/nand/jz_sfcnand.c:1256:		*/	flash->threshold = THRESHOLD;
+drivers/mtd/nand/jz_sfcnand.c:1269:	flash->chnl= flash->pdata->chnl;
+drivers/mtd/nand/jz_sfcnand.c:1270:	flash->tx_addr_plus = 0;
+drivers/mtd/nand/jz_sfcnand.c:1271:	flash->rx_addr_plus = 0;
+drivers/mtd/nand/jz_sfcnand.c:1272:	flash->use_dma = 0;
+drivers/mtd/nand/jz_sfcnand.c:1279:	init_completion(&flash->done);
+drivers/mtd/nand/jz_sfcnand.c:1280:	spin_lock_init(&flash->lock_rxtx);
+drivers/mtd/nand/jz_sfcnand.c:1281:	spin_lock_init(&flash->lock_status);
+drivers/mtd/nand/jz_sfcnand.c:1282:	mutex_init(&flash->lock);
+drivers/mtd/nand/jz_sfcnand.c:1283:	flash->threshold = THRESHOLD;
+drivers/mtd/nand/jz_sfcnand.c:1284:	err = request_irq(flash->irq, jz_sfc_irq, 0, pdev->name, flash);
+drivers/mtd/nand/jz_sfcnand.c:1294:		(flash->pdata)->board_info = (void *)param;
+drivers/mtd/nand/jz_sfcnand.c:1296:		param=(flash->pdata)->board_info;
+drivers/mtd/nand/jz_sfcnand.c:1312:	if (flash->pdata == NULL) {
+drivers/mtd/nand/jz_sfcnand.c:1318:	flash->mtd.name = "sfc_nand";
+drivers/mtd/nand/jz_sfcnand.c:1319:	flash->mtd.owner = THIS_MODULE;
+drivers/mtd/nand/jz_sfcnand.c:1320:	flash->mtd.type = MTD_NANDFLASH;
+drivers/mtd/nand/jz_sfcnand.c:1321:	flash->mtd.flags |= MTD_CAP_NANDFLASH;
+drivers/mtd/nand/jz_sfcnand.c:1322:	flash->mtd.erasesize = spi_flash->block_size;
+drivers/mtd/nand/jz_sfcnand.c:1323:	flash->mtd.writesize = spi_flash->page_size;
+drivers/mtd/nand/jz_sfcnand.c:1324:	flash->mtd.size = spi_flash->size;
+drivers/mtd/nand/jz_sfcnand.c:1325:	flash->mtd.oobsize = spi_flash->oobsize;
+drivers/mtd/nand/jz_sfcnand.c:1326:	flash->mtd.writebufsize = flash->mtd.writesize;
+drivers/mtd/nand/jz_sfcnand.c:1327:	flash->column_cmdaddr_bits = spi_flash->column_cmdaddr_bits;
+drivers/mtd/nand/jz_sfcnand.c:1328:	flash->tRD = spi_flash->tRD_maxbusy;
+drivers/mtd/nand/jz_sfcnand.c:1329:	flash->tPROG = spi_flash->tPROG_maxbusy;
+drivers/mtd/nand/jz_sfcnand.c:1330:	flash->tBERS = spi_flash->tBERS_maxbusy;
+drivers/mtd/nand/jz_sfcnand.c:1332:	flash->mtd.bitflip_threshold = flash->mtd.ecc_strength = 2;
+drivers/mtd/nand/jz_sfcnand.c:1339:	chip->bbt_erase_shift = chip->phys_erase_shift = ffs(flash->mtd.erasesize) - 1;
+drivers/mtd/nand/jz_sfcnand.c:1344:	if (flash->mtd.writesize > 512 || (chip->options & NAND_BUSWIDTH_16))
+drivers/mtd/nand/jz_sfcnand.c:1349:	flash->mtd.priv = chip;
+drivers/mtd/nand/jz_sfcnand.c:1351:	flash->mtd._erase = jz_sfcnand_erase;
+drivers/mtd/nand/jz_sfcnand.c:1352:	flash->mtd._read = jz_sfcnand_read;
+drivers/mtd/nand/jz_sfcnand.c:1353:	flash->mtd._write = jz_sfcnand_write;
+drivers/mtd/nand/jz_sfcnand.c:1354:	flash->mtd._read_oob = jz_sfcnand_read_oob;
+drivers/mtd/nand/jz_sfcnand.c:1355:	flash->mtd._write_oob = jz_sfcnand_write_oob;
+drivers/mtd/nand/jz_sfcnand.c:1356:	flash->mtd._block_isbad = jz_sfcnand_block_isbab;
+drivers/mtd/nand/jz_sfcnand.c:1357:	flash->mtd._block_markbad = jz_sfcnand_block_markbad;
+drivers/mtd/nand/jz_sfcnand.c:1359:	chip->scan_bbt(&flash->mtd);
+drivers/mtd/nand/jz_sfcnand.c:1360:	ret = mtd_device_parse_register(&flash->mtd,jz_probe_types,NULL, mtd_sfcnand_partition, num_partitions);
+drivers/mtd/nand/jz_sfcnand.c:1369:		.len=flash->mtd.erasesize,
+drivers/mtd/nand/jz_sfcnand.c:1370:		.mtd=&(flash->mtd),
+drivers/mtd/nand/jz_sfcnand.c:1373:		jz_sfcnand_erase(&(flash->mtd), &ssa);
+drivers/mtd/nand/jz_sfcnand.c:1377:		ret=jz_sfcnand_write(&(flash->mtd),0x900002, 2049,&llen, bufff);
+drivers/mtd/nand/jz_sfcnand.c:1379:		jz_sfcnand_read(&(flash->mtd),0x900000,2080, &rrrr, bufff);
+drivers/mtd/nand/jz_sfcnand.c:1390:	clk_put(flash->clk_gate);
+drivers/mtd/nand/jz_sfcnand.c:1391:	clk_put(flash->clk);
+drivers/mtd/nand/jz_sfcnand.c:1393:	free_irq(flash->irq, flash);
+drivers/mtd/nand/jz_sfcnand.c:1395:	iounmap(flash->iomem);
+drivers/mtd/nand/jz_sfcnand.c:1398:	release_resource(flash->ioarea);
+drivers/mtd/nand/jz_sfcnand.c:1399:	kfree(flash->ioarea);
+drivers/mtd/nand/jz_sfcnand.c:1408:	clk_disable(flash->clk_gate);
+drivers/mtd/nand/jz_sfcnand.c:1409:	clk_put(flash->clk_gate);
+drivers/mtd/nand/jz_sfcnand.c:1411:	clk_disable(flash->clk);
+drivers/mtd/nand/jz_sfcnand.c:1412:	clk_put(flash->clk);
+drivers/mtd/nand/jz_sfcnand.c:1414:	free_irq(flash->irq, flash);
+drivers/mtd/nand/jz_sfcnand.c:1416:	iounmap(flash->iomem);
+drivers/mtd/nand/jz_sfcnand.c:1418:	release_mem_region(flash->resource->start, resource_size(flash->resource));
+drivers/mtd/nand/jz_sfcnand.c:1430:	spin_lock_irqsave(&flash->lock_status, flags);
+drivers/mtd/nand/jz_sfcnand.c:1431:	flash->status |= STATUS_SUSPND;
+drivers/mtd/nand/jz_sfcnand.c:1432:	disable_irq(flash->irq);
+drivers/mtd/nand/jz_sfcnand.c:1433:	spin_unlock_irqrestore(&flash->lock_status, flags);
+drivers/mtd/nand/jz_sfcnand.c:1435:	clk_disable(flash->clk_gate);
+drivers/mtd/nand/jz_sfcnand.c:1437:	clk_disable(flash->clk);
+drivers/mtd/nand/jz_sfcnand.c:1447:	clk_enable(flash->clk);
+drivers/mtd/nand/jz_sfcnand.c:1449:	clk_enable(flash->clk_gate);
+drivers/mtd/nand/jz_sfcnand.c:1451:	spin_lock_irqsave(&flash->lock_status, flags);
+drivers/mtd/nand/jz_sfcnand.c:1452:	flash->status &= ~STATUS_SUSPND;
+drivers/mtd/nand/jz_sfcnand.c:1453:	enable_irq(flash->irq);
+drivers/mtd/nand/jz_sfcnand.c:1454:	spin_unlock_irqrestore(&flash->lock_status, flags);
+drivers/mtd/nand/jz_sfcnand.c:1464:	spin_lock_irqsave(&flash->lock_status, flags);
+drivers/mtd/nand/jz_sfcnand.c:1465:	flash->status |= STATUS_SUSPND;
+drivers/mtd/nand/jz_sfcnand.c:1466:	disable_irq(flash->irq);
+drivers/mtd/nand/jz_sfcnand.c:1467:	spin_unlock_irqrestore(&flash->lock_status, flags);
+drivers/mtd/nand/jz_sfcnand.c:1469:	clk_disable(flash->clk_gate);
+drivers/mtd/nand/jz_sfcnand.c:1471:	clk_disable(flash->clk);
+drivers/mtd/nand/jz_spi_nand.c:102:	ret = spi_write(flash->spi, command, 1);
+drivers/mtd/nand/jz_spi_nand.c:129:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:141:	int page = addr / flash->mtd.writesize;
+drivers/mtd/nand/jz_spi_nand.c:148:	switch(flash->mtd.erasesize){
+drivers/mtd/nand/jz_spi_nand.c:160:	ret = spi_write(flash->spi, command, 4);
+drivers/mtd/nand/jz_spi_nand.c:165:	msleep((flash->tBERS + 999) / 1000);
+drivers/mtd/nand/jz_spi_nand.c:198:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:212:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:236:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:241:	udelay(flash->tRD);
+drivers/mtd/nand/jz_spi_nand.c:254:	switch(flash->column_cmdaddr_bits){
+drivers/mtd/nand/jz_spi_nand.c:283:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:305:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:363:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:387:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:410:		ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:430:		ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:435:		udelay(flash->tPROG);
+drivers/mtd/nand/jz_spi_nand.c:455:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:485:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:498:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:503:	udelay(flash->tRD);
+drivers/mtd/nand/jz_spi_nand.c:520:	switch(flash->column_cmdaddr_bits){
+drivers/mtd/nand/jz_spi_nand.c:549:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:556:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:571:	mutex_lock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:583:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:588:	udelay(flash->tRD);
+drivers/mtd/nand/jz_spi_nand.c:601:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:619:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/nand/jz_spi_nand.c:624:	udelay(flash->tPROG);
+drivers/mtd/nand/jz_spi_nand.c:634:	mutex_unlock(&flash->lock);
+drivers/mtd/nand/jz_spi_nand.c:701:	/* Update flash-based bad block table */
+drivers/mtd/nand/jz_spi_nand.c:904:		flash->column_cmdaddr_bits=24;
+drivers/mtd/nand/jz_spi_nand.c:906:                        flash->column_cmdaddr_bits=32;
+drivers/mtd/nand/jz_spi_nand.c:966:	spi_nandflash->spi = spi;
+drivers/mtd/nand/jz_spi_nand.c:967:	mutex_init(&spi_nandflash->lock);
+drivers/mtd/nand/jz_spi_nand.c:971:	command_read = kzalloc(spi_flash->page_size,GFP_KERNEL);
+drivers/mtd/nand/jz_spi_nand.c:983:	spi_nandflash->mtd.name = dev_name(&spi->dev);
+drivers/mtd/nand/jz_spi_nand.c:984:	spi_nandflash->mtd.owner = THIS_MODULE;
+drivers/mtd/nand/jz_spi_nand.c:985:	spi_nandflash->mtd.type	= MTD_NANDFLASH;
+drivers/mtd/nand/jz_spi_nand.c:986:	spi_nandflash->mtd.flags |= MTD_CAP_NANDFLASH;
+drivers/mtd/nand/jz_spi_nand.c:987:	spi_nandflash->mtd.erasesize = spi_flash->block_size;
+drivers/mtd/nand/jz_spi_nand.c:988:	spi_nandflash->mtd.writesize = spi_flash->page_size;
+drivers/mtd/nand/jz_spi_nand.c:989:	spi_nandflash->mtd.size = spi_flash->size;
+drivers/mtd/nand/jz_spi_nand.c:990:	spi_nandflash->mtd.oobsize = spi_flash->oobsize;
+drivers/mtd/nand/jz_spi_nand.c:991:	spi_nandflash->mtd.writebufsize = spi_nandflash->mtd.writesize;
+drivers/mtd/nand/jz_spi_nand.c:993:	spi_nandflash->column_cmdaddr_bits = spi_flash->column_cmdaddr_bits;
+drivers/mtd/nand/jz_spi_nand.c:994:	spi_nandflash->tRD = spi_flash->tRD_maxbusy;
+drivers/mtd/nand/jz_spi_nand.c:995:	spi_nandflash->tPROG = spi_flash->tPROG_maxbusy;
+drivers/mtd/nand/jz_spi_nand.c:996:	spi_nandflash->tBERS = spi_flash->tBERS_maxbusy;
+drivers/mtd/nand/jz_spi_nand.c:998:	spi_nandflash->mtd.bitflip_threshold = spi_nandflash->mtd.ecc_strength = 2;
+drivers/mtd/nand/jz_spi_nand.c:1005:	chip->bbt_erase_shift = chip->phys_erase_shift = ffs(spi_nandflash->mtd.erasesize) - 1;
+drivers/mtd/nand/jz_spi_nand.c:1010:	if (spi_nandflash->mtd.writesize > 512 || (chip->options & NAND_BUSWIDTH_16))
+drivers/mtd/nand/jz_spi_nand.c:1015:	spi_nandflash->mtd.priv = chip;
+drivers/mtd/nand/jz_spi_nand.c:1017:	spi_nandflash->mtd._erase = jz_spinand_erase;
+drivers/mtd/nand/jz_spi_nand.c:1018:	spi_nandflash->mtd._read = jz_spinand_read;
+drivers/mtd/nand/jz_spi_nand.c:1019:	spi_nandflash->mtd._write = jz_spinand_write;
+drivers/mtd/nand/jz_spi_nand.c:1020:	spi_nandflash->mtd._read_oob = jz_spinand_read_oob;
+drivers/mtd/nand/jz_spi_nand.c:1021:	spi_nandflash->mtd._write_oob = jz_spinand_write_oob;
+drivers/mtd/nand/jz_spi_nand.c:1022:	spi_nandflash->mtd._block_isbad = jz_spinand_block_isbab;
+drivers/mtd/nand/jz_spi_nand.c:1023:	spi_nandflash->mtd._block_markbad = jz_spinand_block_markbad;
+drivers/mtd/nand/jz_spi_nand.c:1025:	command_write = kzalloc(spi_nandflash->mtd.writesize + 3,GFP_KERNEL);
+drivers/mtd/nand/jz_spi_nand.c:1031:	write_debug_buf = kzalloc(spi_nandflash->mtd.writesize,GFP_KERNEL);
+drivers/mtd/nand/jz_spi_nand.c:1038:	chip->scan_bbt(&spi_nandflash->mtd);
+drivers/mtd/nand/jz_spi_nand.c:1039:	ret = mtd_device_parse_register(&spi_nandflash->mtd,NULL,NULL, mtd_spinand_partition, num_partitions);
+drivers/mtd/nand/jz_spi_nand.c:1058:	ret = mtd_device_unregister(&flash->mtd);
+drivers/mtd/nand/bcm47xxnflash/main.c:73:	if (nflash->mtd)
+drivers/mtd/nand/bcm47xxnflash/main.c:74:		mtd_device_unregister(nflash->mtd);
+drivers/mtd/nand/bcm47xxnflash/Makefile:1:bcm47xxnflash-y				+= main.o
+drivers/mtd/nand/bcm47xxnflash/Makefile:2:bcm47xxnflash-y				+= ops_bcm4706.o
+drivers/mtd/nand/nand_base.c:351: *  (4) update flash-based BBT
+drivers/mtd/nand/nand_base.c:412:	/* Update flash-based bad block table */
+drivers/mtd/nand/nand_base.c:3389:	/* New bad blocks should be marked in OOB, flash-based BBT, or both */
+drivers/mtd/onenand/onenand_sim.c:70:#define ONENAND_CORE(flash)		(flash->data)
+drivers/mtd/onenand/onenand_sim.c:72:	((flash->data) + (this->chipsize) + (offset >> 5))
+drivers/mtd/onenand/onenand_sim.c:452:	flash->base = kzalloc(131072, GFP_KERNEL);
+drivers/mtd/onenand/onenand_sim.c:453:	if (!flash->base) {
+drivers/mtd/onenand/onenand_sim.c:465:		kfree(flash->base);
+drivers/mtd/onenand/onenand_sim.c:472:	writew(manuf_id, flash->base + ONENAND_REG_MANUFACTURER_ID);
+drivers/mtd/onenand/onenand_sim.c:473:	writew(device_id, flash->base + ONENAND_REG_DEVICE_ID);
+drivers/mtd/onenand/onenand_sim.c:474:	writew(version_id, flash->base + ONENAND_REG_VERSION_ID);
+drivers/mtd/onenand/onenand_sim.c:475:	writew(technology_id, flash->base + ONENAND_REG_TECHNOLOGY);
+drivers/mtd/onenand/onenand_sim.c:481:	writew(buffer_size, flash->base + ONENAND_REG_DATA_BUFFER_SIZE);
+drivers/mtd/onenand/onenand_sim.c:495:	kfree(flash->base);
+Binary file drivers/mtd/tests/ramdisk-mtd-test/sbin/ubiformat matches
+drivers/mtd/devices/spear_smi.c:425:	x[0] = flash->erase_cmd;
+drivers/mtd/devices/spear_smi.c:504:	bank = flash->bank;
+drivers/mtd/devices/spear_smi.c:513:	mutex_lock(&flash->lock);
+drivers/mtd/devices/spear_smi.c:522:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/spear_smi.c:529:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/spear_smi.c:560:	if (flash->bank > dev->num_flashes - 1) {
+drivers/mtd/devices/spear_smi.c:566:	src = flash->base_addr + from;
+drivers/mtd/devices/spear_smi.c:568:	mutex_lock(&flash->lock);
+drivers/mtd/devices/spear_smi.c:571:	ret = spear_smi_wait_till_ready(dev, flash->bank, SMI_MAX_TIME_OUT);
+drivers/mtd/devices/spear_smi.c:573:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/spear_smi.c:581:	if (flash->fast_mode)
+drivers/mtd/devices/spear_smi.c:593:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/spear_smi.c:653:	if (flash->bank > dev->num_flashes - 1) {
+drivers/mtd/devices/spear_smi.c:659:	dest = flash->base_addr + to;
+drivers/mtd/devices/spear_smi.c:660:	mutex_lock(&flash->lock);
+drivers/mtd/devices/spear_smi.c:662:	page_offset = (u32)to % flash->page_size;
+drivers/mtd/devices/spear_smi.c:665:	if (page_offset + len <= flash->page_size) {
+drivers/mtd/devices/spear_smi.c:666:		ret = spear_smi_cpy_toio(dev, flash->bank, dest, buf, len);
+drivers/mtd/devices/spear_smi.c:673:		page_size = flash->page_size - page_offset;
+drivers/mtd/devices/spear_smi.c:675:		ret = spear_smi_cpy_toio(dev, flash->bank, dest, buf,
+drivers/mtd/devices/spear_smi.c:685:			if (page_size > flash->page_size)
+drivers/mtd/devices/spear_smi.c:686:				page_size = flash->page_size;
+drivers/mtd/devices/spear_smi.c:688:			ret = spear_smi_cpy_toio(dev, flash->bank, dest + i,
+drivers/mtd/devices/spear_smi.c:698:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/spear_smi.c:833:	flash->bank = bank;
+drivers/mtd/devices/spear_smi.c:834:	flash->fast_mode = flash_info->fast_mode ? 1 : 0;
+drivers/mtd/devices/spear_smi.c:835:	mutex_init(&flash->lock);
+drivers/mtd/devices/spear_smi.c:844:	flash->base_addr = devm_ioremap(&pdev->dev, flash_info->mem_base,
+drivers/mtd/devices/spear_smi.c:846:	if (!flash->base_addr)
+drivers/mtd/devices/spear_smi.c:850:	flash->mtd.priv = dev;
+drivers/mtd/devices/spear_smi.c:853:		flash->mtd.name = flash_info->name;
+drivers/mtd/devices/spear_smi.c:855:		flash->mtd.name = flash_devices[flash_index].name;
+drivers/mtd/devices/spear_smi.c:857:	flash->mtd.type = MTD_NORFLASH;
+drivers/mtd/devices/spear_smi.c:858:	flash->mtd.writesize = 1;
+drivers/mtd/devices/spear_smi.c:859:	flash->mtd.flags = MTD_CAP_NORFLASH;
+drivers/mtd/devices/spear_smi.c:860:	flash->mtd.size = flash_info->size;
+drivers/mtd/devices/spear_smi.c:861:	flash->mtd.erasesize = flash_devices[flash_index].sectorsize;
+drivers/mtd/devices/spear_smi.c:862:	flash->page_size = flash_devices[flash_index].pagesize;
+drivers/mtd/devices/spear_smi.c:863:	flash->mtd.writebufsize = flash->page_size;
+drivers/mtd/devices/spear_smi.c:864:	flash->erase_cmd = flash_devices[flash_index].erase_cmd;
+drivers/mtd/devices/spear_smi.c:865:	flash->mtd._erase = spear_mtd_erase;
+drivers/mtd/devices/spear_smi.c:866:	flash->mtd._read = spear_mtd_read;
+drivers/mtd/devices/spear_smi.c:867:	flash->mtd._write = spear_mtd_write;
+drivers/mtd/devices/spear_smi.c:868:	flash->dev_id = flash_devices[flash_index].device_id;
+drivers/mtd/devices/spear_smi.c:871:			flash->mtd.name, flash->mtd.size,
+drivers/mtd/devices/spear_smi.c:872:			flash->mtd.size / (1024 * 1024));
+drivers/mtd/devices/spear_smi.c:875:			flash->mtd.erasesize, flash->mtd.erasesize / 1024);
+drivers/mtd/devices/spear_smi.c:885:	ret = mtd_device_parse_register(&flash->mtd, NULL, &ppdata, parts,
+drivers/mtd/devices/spear_smi.c:1037:		ret = mtd_device_unregister(&flash->mtd);
+drivers/mtd/devices/bcm47xxsflash.c:62:	sflash->priv = b47s;
+drivers/mtd/devices/bcm47xxsflash.c:64:	b47s->window = sflash->window;
+drivers/mtd/devices/bcm47xxsflash.c:65:	b47s->blocksize = sflash->blocksize;
+drivers/mtd/devices/bcm47xxsflash.c:66:	b47s->numblocks = sflash->numblocks;
+drivers/mtd/devices/bcm47xxsflash.c:67:	b47s->size = sflash->size;
+drivers/mtd/devices/bcm47xxsflash.c:87:	struct bcm47xxsflash *b47s = sflash->priv;
+drivers/mtd/devices/m25p80.c:113:	retval = spi_write_then_read(flash->spi, &code, 1, &val, 1);
+drivers/mtd/devices/m25p80.c:116:		dev_err(&flash->spi->dev, "error %d reading SR\n",
+drivers/mtd/devices/m25p80.c:130:	flash->command[0] = OPCODE_WRSR;
+drivers/mtd/devices/m25p80.c:131:	flash->command[1] = val;
+drivers/mtd/devices/m25p80.c:133:	return spi_write(flash->spi, flash->command, 2);
+drivers/mtd/devices/m25p80.c:144:	return spi_write_then_read(flash->spi, &code, 1, NULL, 0);
+drivers/mtd/devices/m25p80.c:154:	return spi_write_then_read(flash->spi, &code, 1, NULL, 0);
+drivers/mtd/devices/m25p80.c:165:		flash->command[0] = enable ? OPCODE_EN4B : OPCODE_EX4B;
+drivers/mtd/devices/m25p80.c:166:		return spi_write(flash->spi, flash->command, 1);
+drivers/mtd/devices/m25p80.c:169:		flash->command[0] = OPCODE_BRWR;
+drivers/mtd/devices/m25p80.c:170:		flash->command[1] = enable << 7;
+drivers/mtd/devices/m25p80.c:171:		return spi_write(flash->spi, flash->command, 2);
+drivers/mtd/devices/m25p80.c:206:	pr_debug("%s: %s %lldKiB\n", dev_name(&flash->spi->dev), __func__,
+drivers/mtd/devices/m25p80.c:207:			(long long)(flash->mtd.size >> 10));
+drivers/mtd/devices/m25p80.c:217:	flash->command[0] = OPCODE_CHIP_ERASE;
+drivers/mtd/devices/m25p80.c:219:	spi_write(flash->spi, flash->command, 1);
+drivers/mtd/devices/m25p80.c:227:	cmd[1] = addr >> (flash->addr_width * 8 -  8);
+drivers/mtd/devices/m25p80.c:228:	cmd[2] = addr >> (flash->addr_width * 8 - 16);
+drivers/mtd/devices/m25p80.c:229:	cmd[3] = addr >> (flash->addr_width * 8 - 24);
+drivers/mtd/devices/m25p80.c:230:	cmd[4] = addr >> (flash->addr_width * 8 - 32);
+drivers/mtd/devices/m25p80.c:235:	return 1 + flash->addr_width;
+drivers/mtd/devices/m25p80.c:246:	pr_debug("%s: %s %dKiB at 0x%08x\n", dev_name(&flash->spi->dev),
+drivers/mtd/devices/m25p80.c:247:			__func__, flash->mtd.erasesize / 1024, offset);
+drivers/mtd/devices/m25p80.c:257:	flash->command[0] = flash->erase_opcode;
+drivers/mtd/devices/m25p80.c:258:	m25p_addr2cmd(flash, offset, flash->command);
+drivers/mtd/devices/m25p80.c:260:	spi_write(flash->spi, flash->command, m25p_cmdsz(flash));
+drivers/mtd/devices/m25p80.c:281:	pr_debug("%s: %s at 0x%llx, len %lld\n", dev_name(&flash->spi->dev),
+drivers/mtd/devices/m25p80.c:292:	mutex_lock(&flash->lock);
+drivers/mtd/devices/m25p80.c:295:	if (len == flash->mtd.size) {
+drivers/mtd/devices/m25p80.c:298:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:312:				mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:321:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:341:	pr_debug("%s: %s from 0x%08x, len %zd\n", dev_name(&flash->spi->dev),
+drivers/mtd/devices/m25p80.c:351:	t[0].tx_buf = flash->command;
+drivers/mtd/devices/m25p80.c:352:	t[0].len = m25p_cmdsz(flash) + (flash->fast_read ? 1 : 0);
+drivers/mtd/devices/m25p80.c:359:	mutex_lock(&flash->lock);
+drivers/mtd/devices/m25p80.c:364:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:374:	opcode = flash->fast_read ? OPCODE_FAST_READ : OPCODE_NORM_READ;
+drivers/mtd/devices/m25p80.c:375:	flash->command[0] = opcode;
+drivers/mtd/devices/m25p80.c:376:	m25p_addr2cmd(flash, from, flash->command);
+drivers/mtd/devices/m25p80.c:378:	spi_sync(flash->spi, &m);
+drivers/mtd/devices/m25p80.c:381:			(flash->fast_read ? 1 : 0);
+drivers/mtd/devices/m25p80.c:383:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:401:	pr_debug("%s: %s to 0x%08x, len %zd\n", dev_name(&flash->spi->dev),
+drivers/mtd/devices/m25p80.c:407:	t[0].tx_buf = flash->command;
+drivers/mtd/devices/m25p80.c:414:	mutex_lock(&flash->lock);
+drivers/mtd/devices/m25p80.c:418:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:425:	flash->command[0] = OPCODE_PP;
+drivers/mtd/devices/m25p80.c:426:	m25p_addr2cmd(flash, to, flash->command);
+drivers/mtd/devices/m25p80.c:428:	page_offset = to & (flash->page_size - 1);
+drivers/mtd/devices/m25p80.c:431:	if (page_offset + len <= flash->page_size) {
+drivers/mtd/devices/m25p80.c:434:		spi_sync(flash->spi, &m);
+drivers/mtd/devices/m25p80.c:441:		page_size = flash->page_size - page_offset;
+drivers/mtd/devices/m25p80.c:444:		spi_sync(flash->spi, &m);
+drivers/mtd/devices/m25p80.c:448:		/* write everything in flash->page_size chunks */
+drivers/mtd/devices/m25p80.c:451:			if (page_size > flash->page_size)
+drivers/mtd/devices/m25p80.c:452:				page_size = flash->page_size;
+drivers/mtd/devices/m25p80.c:455:			m25p_addr2cmd(flash, to + i, flash->command);
+drivers/mtd/devices/m25p80.c:464:			spi_sync(flash->spi, &m);
+drivers/mtd/devices/m25p80.c:470:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:484:	pr_debug("%s: %s to 0x%08x, len %zd\n", dev_name(&flash->spi->dev),
+drivers/mtd/devices/m25p80.c:490:	t[0].tx_buf = flash->command;
+drivers/mtd/devices/m25p80.c:497:	mutex_lock(&flash->lock);
+drivers/mtd/devices/m25p80.c:509:		flash->command[0] = OPCODE_BP;
+drivers/mtd/devices/m25p80.c:510:		m25p_addr2cmd(flash, to, flash->command);
+drivers/mtd/devices/m25p80.c:514:		spi_sync(flash->spi, &m);
+drivers/mtd/devices/m25p80.c:522:	flash->command[0] = OPCODE_AAI_WP;
+drivers/mtd/devices/m25p80.c:523:	m25p_addr2cmd(flash, to, flash->command);
+drivers/mtd/devices/m25p80.c:533:		spi_sync(flash->spi, &m);
+drivers/mtd/devices/m25p80.c:549:		flash->command[0] = OPCODE_BP;
+drivers/mtd/devices/m25p80.c:550:		m25p_addr2cmd(flash, to, flash->command);
+drivers/mtd/devices/m25p80.c:555:		spi_sync(flash->spi, &m);
+drivers/mtd/devices/m25p80.c:564:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:575:	mutex_lock(&flash->lock);
+drivers/mtd/devices/m25p80.c:584:	if (offset < flash->mtd.size-(flash->mtd.size/2))
+drivers/mtd/devices/m25p80.c:586:	else if (offset < flash->mtd.size-(flash->mtd.size/4))
+drivers/mtd/devices/m25p80.c:588:	else if (offset < flash->mtd.size-(flash->mtd.size/8))
+drivers/mtd/devices/m25p80.c:590:	else if (offset < flash->mtd.size-(flash->mtd.size/16))
+drivers/mtd/devices/m25p80.c:592:	else if (offset < flash->mtd.size-(flash->mtd.size/32))
+drivers/mtd/devices/m25p80.c:594:	else if (offset < flash->mtd.size-(flash->mtd.size/64))
+drivers/mtd/devices/m25p80.c:609:err:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:620:	mutex_lock(&flash->lock);
+drivers/mtd/devices/m25p80.c:629:	if (offset+len > flash->mtd.size-(flash->mtd.size/64))
+drivers/mtd/devices/m25p80.c:631:	else if (offset+len > flash->mtd.size-(flash->mtd.size/32))
+drivers/mtd/devices/m25p80.c:633:	else if (offset+len > flash->mtd.size-(flash->mtd.size/16))
+drivers/mtd/devices/m25p80.c:635:	else if (offset+len > flash->mtd.size-(flash->mtd.size/8))
+drivers/mtd/devices/m25p80.c:637:	else if (offset+len > flash->mtd.size-(flash->mtd.size/4))
+drivers/mtd/devices/m25p80.c:639:	else if (offset+len > flash->mtd.size-(flash->mtd.size/2))
+drivers/mtd/devices/m25p80.c:654:err:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/m25p80.c:961:	flash->command = kmalloc(MAX_CMD_SIZE + (flash->fast_read ? 1 : 0),
+drivers/mtd/devices/m25p80.c:963:	if (!flash->command) {
+drivers/mtd/devices/m25p80.c:968:	flash->spi = spi;
+drivers/mtd/devices/m25p80.c:969:	mutex_init(&flash->lock);
+drivers/mtd/devices/m25p80.c:985:		flash->mtd.name = data->name;
+drivers/mtd/devices/m25p80.c:987:		flash->mtd.name = dev_name(&spi->dev);
+drivers/mtd/devices/m25p80.c:989:	flash->mtd.type = MTD_NORFLASH;
+drivers/mtd/devices/m25p80.c:990:	flash->mtd.writesize = 1;
+drivers/mtd/devices/m25p80.c:991:	flash->mtd.flags = MTD_CAP_NORFLASH;
+drivers/mtd/devices/m25p80.c:992:	flash->mtd.size = info->sector_size * info->n_sectors;
+drivers/mtd/devices/m25p80.c:993:	flash->mtd._erase = m25p80_erase;
+drivers/mtd/devices/m25p80.c:994:	flash->mtd._read = m25p80_read;
+drivers/mtd/devices/m25p80.c:998:		flash->mtd._lock = m25p80_lock;
+drivers/mtd/devices/m25p80.c:999:		flash->mtd._unlock = m25p80_unlock;
+drivers/mtd/devices/m25p80.c:1004:		flash->mtd._write = sst_write;
+drivers/mtd/devices/m25p80.c:1006:		flash->mtd._write = m25p80_write;
+drivers/mtd/devices/m25p80.c:1010:		flash->erase_opcode = OPCODE_BE_4K;
+drivers/mtd/devices/m25p80.c:1011:		flash->mtd.erasesize = 4096;
+drivers/mtd/devices/m25p80.c:1013:		flash->erase_opcode = OPCODE_SE;
+drivers/mtd/devices/m25p80.c:1014:		flash->mtd.erasesize = info->sector_size;
+drivers/mtd/devices/m25p80.c:1018:		flash->mtd.flags |= MTD_NO_ERASE;
+drivers/mtd/devices/m25p80.c:1021:	flash->mtd.dev.parent = &spi->dev;
+drivers/mtd/devices/m25p80.c:1022:	flash->page_size = info->page_size;
+drivers/mtd/devices/m25p80.c:1023:	flash->mtd.writebufsize = flash->page_size;
+drivers/mtd/devices/m25p80.c:1025:	flash->fast_read = false;
+drivers/mtd/devices/m25p80.c:1028:		flash->fast_read = true;
+drivers/mtd/devices/m25p80.c:1032:	flash->fast_read = true;
+drivers/mtd/devices/m25p80.c:1036:		flash->addr_width = info->addr_width;
+drivers/mtd/devices/m25p80.c:1039:		if (flash->mtd.size > 0x1000000) {
+drivers/mtd/devices/m25p80.c:1040:			flash->addr_width = 4;
+drivers/mtd/devices/m25p80.c:1043:			flash->addr_width = 3;
+drivers/mtd/devices/m25p80.c:1047:			(long long)flash->mtd.size >> 10);
+drivers/mtd/devices/m25p80.c:1051:		flash->mtd.name,
+drivers/mtd/devices/m25p80.c:1052:		(long long)flash->mtd.size, (long long)(flash->mtd.size >> 20),
+drivers/mtd/devices/m25p80.c:1053:		flash->mtd.erasesize, flash->mtd.erasesize / 1024,
+drivers/mtd/devices/m25p80.c:1054:		flash->mtd.numeraseregions);
+drivers/mtd/devices/m25p80.c:1056:	if (flash->mtd.numeraseregions)
+drivers/mtd/devices/m25p80.c:1057:		for (i = 0; i < flash->mtd.numeraseregions; i++)
+drivers/mtd/devices/m25p80.c:1061:				i, (long long)flash->mtd.eraseregions[i].offset,
+drivers/mtd/devices/m25p80.c:1062:				flash->mtd.eraseregions[i].erasesize,
+drivers/mtd/devices/m25p80.c:1063:				flash->mtd.eraseregions[i].erasesize / 1024,
+drivers/mtd/devices/m25p80.c:1064:				flash->mtd.eraseregions[i].numblocks);
+drivers/mtd/devices/m25p80.c:1070:	return mtd_device_parse_register(&flash->mtd, NULL, &ppdata,
+drivers/mtd/devices/m25p80.c:1082:	status = mtd_device_unregister(&flash->mtd);
+drivers/mtd/devices/m25p80.c:1084:		kfree(flash->command);
+drivers/mtd/devices/mtd_dataflash.c:905:	status = mtd_device_unregister(&flash->mtd);
+Binary file drivers/mtd/devices/jz_sfc.o matches
+drivers/mtd/devices/jz_sfc.c:159:	unsigned long  len = (flash->len + 3) / 4 ;
+drivers/mtd/devices/jz_sfc.c:168:		sfc_read_data(flash, (flash->rx));
+drivers/mtd/devices/jz_sfc.c:169:		flash->rx++;
+drivers/mtd/devices/jz_sfc.c:170:		flash->rlen ++;
+drivers/mtd/devices/jz_sfc.c:173:	if(len == flash->rlen){
+drivers/mtd/devices/jz_sfc.c:176:		flash->rlen = flash->len;
+drivers/mtd/devices/jz_sfc.c:177:		return flash->rlen;
+drivers/mtd/devices/jz_sfc.c:186:	unsigned long  len = (flash->len + 3) / 4;
+drivers/mtd/devices/jz_sfc.c:189:	if ((len - flash->rlen) > THRESHOLD)
+drivers/mtd/devices/jz_sfc.c:192:		fifo_num = len - flash->rlen;
+drivers/mtd/devices/jz_sfc.c:196:		sfc_write_data(flash, (flash->tx1));
+drivers/mtd/devices/jz_sfc.c:197:		flash->tx1++;
+drivers/mtd/devices/jz_sfc.c:198:		flash->rlen ++;
+drivers/mtd/devices/jz_sfc.c:201:	if(len == flash->rlen){
+drivers/mtd/devices/jz_sfc.c:203:		flash->rlen = flash->len;
+drivers/mtd/devices/jz_sfc.c:204:		return flash->rlen;
+drivers/mtd/devices/jz_sfc.c:214://	mutex_lock(&flash->mutex_lock);
+drivers/mtd/devices/jz_sfc.c:215:	if(flash->tx){
+drivers/mtd/devices/jz_sfc.c:217:	}else if(flash->rx){
+drivers/mtd/devices/jz_sfc.c:222://	mutex_unlock(&flash->mutex_lock);
+drivers/mtd/devices/jz_sfc.c:231:		dev_err(flash->dev, "sfc UNDR !\n");
+drivers/mtd/devices/jz_sfc.c:232:		complete(&flash->done);
+drivers/mtd/devices/jz_sfc.c:238:		dev_err(flash->dev, "sfc OVER !\n");
+drivers/mtd/devices/jz_sfc.c:239:		complete(&flash->done);
+drivers/mtd/devices/jz_sfc.c:245:		//flush_work(&flash->rw_work);
+drivers/mtd/devices/jz_sfc.c:246:		//queue_work(flash->workqueue, &flash->rw_work);
+drivers/mtd/devices/jz_sfc.c:253:		//flush_work(&flash->rw_work);
+drivers/mtd/devices/jz_sfc.c:254:		//queue_work(flash->workqueue, &flash->rw_work);
+drivers/mtd/devices/jz_sfc.c:267:		if(flash->nor_info->pollen){
+drivers/mtd/devices/jz_sfc.c:268:			if(flash->rx){
+drivers/mtd/devices/jz_sfc.c:269:				if(flash->nor_info->cmd == CMD_RDSR)
+drivers/mtd/devices/jz_sfc.c:270:					*(flash->rx) = 0x0;
+drivers/mtd/devices/jz_sfc.c:271:				if(flash->nor_info->cmd == CMD_RDSR_1)
+drivers/mtd/devices/jz_sfc.c:272:					*(flash->rx) = 0x2;
+drivers/mtd/devices/jz_sfc.c:273:				flash->rlen = flash->len;
+drivers/mtd/devices/jz_sfc.c:278:		complete(&flash->done);
+drivers/mtd/devices/jz_sfc.c:289:	print_dbg("!!!!!! flash->addr_len = %d,,flash->daten = %x,cmd = %x,cmd_flag = %x,flash->len = %x\n",flash->addr_len,flash->daten,flash->cmd,cmd_flag,flash->len);
+drivers/mtd/devices/jz_sfc.c:294:	if(flash->rw_mode & R_MODE) {
+drivers/mtd/devices/jz_sfc.c:296:		sfc_set_length(flash, flash->len);
+drivers/mtd/devices/jz_sfc.c:297:		sfc_set_addr_length(flash, 0, flash->nor_info->addr_len);
+drivers/mtd/devices/jz_sfc.c:299:		sfc_data_en(flash, 0, flash->nor_info->daten);
+drivers/mtd/devices/jz_sfc.c:300:		sfc_write_cmd(flash, 0, flash->nor_info->cmd);
+drivers/mtd/devices/jz_sfc.c:301:		sfc_dev_addr(flash, 0, flash->addr);
+drivers/mtd/devices/jz_sfc.c:302:		sfc_dev_addr_plus(flash, 0, flash->rx_addr_plus);
+drivers/mtd/devices/jz_sfc.c:303:		sfc_dev_addr_dummy_bytes(flash,0,flash->nor_info->dummy_byte);
+drivers/mtd/devices/jz_sfc.c:304:		if((flash->use_dma ==1)&&(flash->nor_info->dma_mode)){
+drivers/mtd/devices/jz_sfc.c:305:			dma_cache_sync(NULL, (void *)flash->rx, flash->len, DMA_FROM_DEVICE);
+drivers/mtd/devices/jz_sfc.c:306:			sfc_set_mem_addr(flash, GET_PHYADDR(flash->rx));
+drivers/mtd/devices/jz_sfc.c:312:		sfc_dev_pollen(flash,0,flash->nor_info->pollen);
+drivers/mtd/devices/jz_sfc.c:315:		sfc_set_length(flash, flash->len);
+drivers/mtd/devices/jz_sfc.c:316:		sfc_set_addr_length(flash, 0, flash->nor_info->addr_len);
+drivers/mtd/devices/jz_sfc.c:318:		sfc_data_en(flash, 0, flash->nor_info->daten);
+drivers/mtd/devices/jz_sfc.c:319:		sfc_write_cmd(flash, 0, flash->nor_info->cmd);
+drivers/mtd/devices/jz_sfc.c:320:		sfc_dev_addr(flash, 0, flash->addr);
+drivers/mtd/devices/jz_sfc.c:321:		sfc_dev_addr_plus(flash, 0, flash->tx_addr_plus);
+drivers/mtd/devices/jz_sfc.c:322:		sfc_dev_addr_dummy_bytes(flash,0,flash->nor_info->dummy_byte);
+drivers/mtd/devices/jz_sfc.c:324:		if((flash->use_dma ==1)&&(flash->nor_info->dma_mode)){
+drivers/mtd/devices/jz_sfc.c:325:			dma_cache_sync(NULL,(void *)flash->tx1, flash->len, DMA_TO_DEVICE);
+drivers/mtd/devices/jz_sfc.c:326:			sfc_set_mem_addr(flash, GET_PHYADDR(flash->tx1));
+drivers/mtd/devices/jz_sfc.c:332:		sfc_dev_pollen(flash,0,flash->nor_info->pollen);
+drivers/mtd/devices/jz_sfc.c:335:	if((flash->nor_info->addr_len !=0)&&(flash->nor_info->daten == 1)){
+drivers/mtd/devices/jz_sfc.c:336:		if(flash->rw_mode & R_MODE){
+drivers/mtd/devices/jz_sfc.c:339:				sfc_mode(flash,0,flash->sfc_mode);
+drivers/mtd/devices/jz_sfc.c:341:				sfc_mode(flash,0,flash->board_info->quad_mode->sfc_mode);
+drivers/mtd/devices/jz_sfc.c:344:			sfc_mode(flash,0,flash->sfc_mode);
+drivers/mtd/devices/jz_sfc.c:347:			sfc_mode(flash,0,flash->sfc_mode);
+drivers/mtd/devices/jz_sfc.c:358:	if(flash->nor_info->pollen){
+drivers/mtd/devices/jz_sfc.c:359:		if(flash->nor_info->cmd == CMD_RDSR){
+drivers/mtd/devices/jz_sfc.c:365:		if(flash->nor_info->cmd == CMD_RDSR_1){
+drivers/mtd/devices/jz_sfc.c:397:		dev_info(flash->dev, "the tx and rx buf of spi_transfer is NULL !\n");
+drivers/mtd/devices/jz_sfc.c:401:	flash->tx = t->tx_buf;
+drivers/mtd/devices/jz_sfc.c:402:	flash->tx1 = t->tx_buf1;
+drivers/mtd/devices/jz_sfc.c:403:	flash->rx = t->rx_buf;
+drivers/mtd/devices/jz_sfc.c:405:	flash->len = t->len;
+drivers/mtd/devices/jz_sfc.c:406:	flash->rlen = 0;
+drivers/mtd/devices/jz_sfc.c:407:	flash->rw_mode = 0;
+drivers/mtd/devices/jz_sfc.c:411:		flash->sfc_mode = 0;
+drivers/mtd/devices/jz_sfc.c:413:		flash->sfc_mode = TRAN_SPI_QUAD;
+drivers/mtd/devices/jz_sfc.c:416:	flash->sfc_mode = 0;
+drivers/mtd/devices/jz_sfc.c:419:	if(flash->rx){
+drivers/mtd/devices/jz_sfc.c:420:		flash->rw_mode = R_MODE;
+drivers/mtd/devices/jz_sfc.c:422:		flash->rw_mode = W_MODE;
+drivers/mtd/devices/jz_sfc.c:423:	if(flash->tx){
+drivers/mtd/devices/jz_sfc.c:425:		tmp_cmd = *(unsigned char *)(flash->tx);
+drivers/mtd/devices/jz_sfc.c:426:		flash->nor_info = check_cmd(tmp_cmd);
+drivers/mtd/devices/jz_sfc.c:428:		print_dbg("the tmp_cmd = %x,flash->len = %d\n",tmp_cmd,flash->len);
+drivers/mtd/devices/jz_sfc.c:429:		if(flash->nor_info->cmd == CMD_NON){
+drivers/mtd/devices/jz_sfc.c:435:		if ( flash->nor_info->addr_len != 0) {
+drivers/mtd/devices/jz_sfc.c:436:			if (flash->addr_len == 4){
+drivers/mtd/devices/jz_sfc.c:437:				flash->nor_info->addr_len = flash->addr_len;
+drivers/mtd/devices/jz_sfc.c:438:				flash->addr = (((*(unsigned char*)(t->tx_buf + 1)) << 24)&0xff000000)|
+drivers/mtd/devices/jz_sfc.c:442:			}else if (flash->addr_len == 3){
+drivers/mtd/devices/jz_sfc.c:443:				if(flash->nor_info->M7_0 == 1){
+drivers/mtd/devices/jz_sfc.c:444:					flash->addr = (((*(unsigned char*)(t->tx_buf + 1)) << 24)&0xff000000)|
+drivers/mtd/devices/jz_sfc.c:448:					flash->nor_info->addr_len = flash->addr_len;
+drivers/mtd/devices/jz_sfc.c:449:					flash->addr = (((*(unsigned char*)(t->tx_buf + 1)) << 16)&0x00ff0000)|
+drivers/mtd/devices/jz_sfc.c:454:			}else if ( flash->addr_len == 2) {
+drivers/mtd/devices/jz_sfc.c:455:				flash->nor_info->addr_len = flash->addr_len;
+drivers/mtd/devices/jz_sfc.c:456:				flash->addr = (((*(unsigned char*)(t->tx_buf + 1)) << 8) &0x0000ff00)|
+drivers/mtd/devices/jz_sfc.c:463:			flash->addr = 0;
+drivers/mtd/devices/jz_sfc.c:465:		print_dbg("flash->nor_info->cmd = %x,flash->nor_info->daten = %x,flash->nor_info->addr_len = %x,flash->nor_info->can_train = %d,flash->addr = %x\n",flash->nor_info->cmd,flash->nor_info->daten,
+drivers/mtd/devices/jz_sfc.c:466:				flash->nor_info->addr_len,flash->nor_info->can_train,flash->addr);
+drivers/mtd/devices/jz_sfc.c:468:		dev_err(flash->dev,"the flash->tx can not be NULL\n");
+drivers/mtd/devices/jz_sfc.c:471:	spin_lock_irqsave(&flash->lock_rxtx, flags);
+drivers/mtd/devices/jz_sfc.c:474:		dev_err(flash->dev,"data transfer error!,please check the cmd,and the driver do not support spi nand flash\n");
+drivers/mtd/devices/jz_sfc.c:477:		spin_unlock_irqrestore(&flash->lock_rxtx, flags);
+drivers/mtd/devices/jz_sfc.c:480:	spin_unlock_irqrestore(&flash->lock_rxtx, flags);
+drivers/mtd/devices/jz_sfc.c:486:	err = wait_for_completion_timeout(&flash->done,10*HZ);
+drivers/mtd/devices/jz_sfc.c:489:		dev_err(flash->dev, "Timeout for ACK from SFC device\n");
+drivers/mtd/devices/jz_sfc.c:493:	if(flash->rw_mode & R_MODE)
+drivers/mtd/devices/jz_sfc.c:494:		dma_cache_sync(NULL, (void *)flash->rx, flash->len, DMA_FROM_DEVICE);
+drivers/mtd/devices/jz_sfc.c:496:	if(flash->use_dma == 1)
+drivers/mtd/devices/jz_sfc.c:497:		return flash->len;
+drivers/mtd/devices/jz_sfc.c:499:	if(flash->rlen != flash->len){
+drivers/mtd/devices/jz_sfc.c:501:		print_dbg("the length is not mach,flash->rlen = %d,flash->len = %d,return !\n",flash->rlen,flash->len);
+drivers/mtd/devices/jz_sfc.c:502:		if(flash->rlen < flash->len)
+drivers/mtd/devices/jz_sfc.c:503:			    flash->rlen = flash->len;
+drivers/mtd/devices/jz_sfc.c:509:	return flash->rlen;
+drivers/mtd/devices/jz_sfc.c:528:	sfc_threshold(flash, flash->threshold);
+drivers/mtd/devices/jz_sfc.c:535:	flash->sfc_mode = 0;
+drivers/mtd/devices/jz_sfc.c:539:	if(flash->src_clk >= 100000000){
+drivers/mtd/devices/jz_sfc.c:544:	flash->swap_buf = kmalloc(SWAP_BUF_SIZE + PAGE_SIZE,GFP_KERNEL);
+drivers/mtd/devices/jz_sfc.c:545:	if(flash->swap_buf == NULL){
+drivers/mtd/devices/jz_sfc.c:546:		dev_err(flash->dev,"alloc mem error\n");
+drivers/mtd/devices/jz_sfc.c:551:	flash->use_dma = 1;
+drivers/mtd/devices/jz_sfc.c:553:	flash->irq_callback = &jz_sfc_pio_irq_callback;
+drivers/mtd/devices/jz_sfc.c:563:	return flash->irq_callback(flash);
+drivers/mtd/devices/jz_sfc.c:583:		dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:627:		dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:643:	if(flash->board_info->quad_mode != NULL){
+drivers/mtd/devices/jz_sfc.c:646:		command_stage1[0] = flash->board_info->quad_mode->WRSR_CMD;//CMD_WRSR_1;
+drivers/mtd/devices/jz_sfc.c:647:		command_stage2[0] = flash->board_info->quad_mode->WRSR_DATE;//0x2;
+drivers/mtd/devices/jz_sfc.c:651:		transfer[0].len = flash->board_info->quad_mode->WD_DATE_SIZE,//1;//sizeof(command_stage2);
+drivers/mtd/devices/jz_sfc.c:654:			dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:661:		command_stage1[0] = flash->board_info->quad_mode->RDSR_CMD;
+drivers/mtd/devices/jz_sfc.c:665:		transfer[0].len = flash->board_info->quad_mode->RD_DATE_SIZE;//1;//sizeof(command_stage2);
+drivers/mtd/devices/jz_sfc.c:668:			dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:673:		if (!(status & flash->board_info->quad_mode->RDSR_DATE)) {
+drivers/mtd/devices/jz_sfc.c:679:		dev_err(flash->dev,"the struct quad_mode is NULL , %d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:692:	if(flash->board_info->addrsize == 4){
+drivers/mtd/devices/jz_sfc.c:706:			dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:727:	switch(flash->mtd.erasesize) {
+drivers/mtd/devices/jz_sfc.c:743:	for(j = 1; j <= flash->addr_len; j++){
+drivers/mtd/devices/jz_sfc.c:744:			command_stage1[j] = offset >> (flash->addr_len - j) * 8;
+drivers/mtd/devices/jz_sfc.c:754:		dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:775:	mutex_lock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:780:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:787:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:798:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:808:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:816:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:837:	swap_buf = flash->swap_buf;
+drivers/mtd/devices/jz_sfc.c:839:	mutex_lock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:850:	command_stage1[0] = flash->board_info->quad_mode->cmd_read;//SPINOR_OP_READ_1_1_4;
+drivers/mtd/devices/jz_sfc.c:861:		for(j = 1; j <= flash->addr_len; j++){
+drivers/mtd/devices/jz_sfc.c:862:			command_stage1[j] = from >> (flash->addr_len - j) * 8;
+drivers/mtd/devices/jz_sfc.c:872:			dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:890:			for(j = 1; j <= flash->addr_len; j++){
+drivers/mtd/devices/jz_sfc.c:891:				command_stage1[j] = (from + tmp_len) >> (flash->addr_len - j) * 8;
+drivers/mtd/devices/jz_sfc.c:901:				dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:913:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:927:	swap_buf = flash->swap_buf;
+drivers/mtd/devices/jz_sfc.c:932:	for(j = 1; j <= flash->addr_len; j++){
+drivers/mtd/devices/jz_sfc.c:933:		command_stage1[j] = from >> (flash->addr_len - j) * 8;
+drivers/mtd/devices/jz_sfc.c:943:		dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:964:	swap_buf = flash->swap_buf;
+drivers/mtd/devices/jz_sfc.c:965:	mutex_lock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:987:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1002:		for(j = 1; j <= flash->addr_len; j++){
+drivers/mtd/devices/jz_sfc.c:1003:			command_stage1[j] = to >> (flash->addr_len - j) * 8;
+drivers/mtd/devices/jz_sfc.c:1015:			dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:1021:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1033:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1048:		for(j = 1; j <= flash->addr_len; j++){
+drivers/mtd/devices/jz_sfc.c:1049:			command_stage1[j] = (to + i) >> (flash->addr_len - j) * 8;
+drivers/mtd/devices/jz_sfc.c:1066:			dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:1073:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1082:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1118:	mutex_lock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1120:	flash->addr_len = 3;//default addrsize for read params from norflash
+drivers/mtd/devices/jz_sfc.c:1156:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1177:			dev_err(flash->dev,"the transfer length is error,%d,%s\n",__LINE__,__func__);
+drivers/mtd/devices/jz_sfc.c:1181:		for (i = 0; i < flash->board_info_size; i++) {
+drivers/mtd/devices/jz_sfc.c:1182:			board_info = &flash->board_info[i];
+drivers/mtd/devices/jz_sfc.c:1189:		if (i == flash->board_info_size) {
+drivers/mtd/devices/jz_sfc.c:1191:				board_info = &flash->board_info[0];
+drivers/mtd/devices/jz_sfc.c:1196:				mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1202:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1261:	flash->dev = &pdev->dev;
+drivers/mtd/devices/jz_sfc.c:1263:	flash->pdata = pdev->dev.platform_data;
+drivers/mtd/devices/jz_sfc.c:1264:	if (flash->pdata == NULL) {
+drivers/mtd/devices/jz_sfc.c:1270:	flash->chnl= flash->pdata->chnl;
+drivers/mtd/devices/jz_sfc.c:1271:	flash->board_info = flash->pdata->board_info;
+drivers/mtd/devices/jz_sfc.c:1272:	flash->board_info_size = flash->pdata->board_info_size;
+drivers/mtd/devices/jz_sfc.c:1274:	flash->tx_addr_plus = 0;
+drivers/mtd/devices/jz_sfc.c:1275:	flash->rx_addr_plus = 0;
+drivers/mtd/devices/jz_sfc.c:1276:	flash->use_dma = 0;
+drivers/mtd/devices/jz_sfc.c:1286:	flash->ioarea = request_mem_region(res->start, resource_size(res),
+drivers/mtd/devices/jz_sfc.c:1288:	if (flash->ioarea == NULL) {
+drivers/mtd/devices/jz_sfc.c:1294:	flash->phys = res->start;
+drivers/mtd/devices/jz_sfc.c:1296:	flash->iomem = ioremap(res->start, (res->end - res->start)+1);
+drivers/mtd/devices/jz_sfc.c:1297:	if (flash->iomem == NULL) {
+drivers/mtd/devices/jz_sfc.c:1303:	flash->irq = platform_get_irq(pdev, 0);
+drivers/mtd/devices/jz_sfc.c:1304:	if (flash->irq <= 0) {
+drivers/mtd/devices/jz_sfc.c:1310:	flash->clk = clk_get(&pdev->dev, "cgu_ssi");
+drivers/mtd/devices/jz_sfc.c:1311:	if (IS_ERR(flash->clk)) {
+drivers/mtd/devices/jz_sfc.c:1317:	flash->clk_gate = clk_get(&pdev->dev, "sfc");
+drivers/mtd/devices/jz_sfc.c:1318:	if (IS_ERR(flash->clk_gate)) {
+drivers/mtd/devices/jz_sfc.c:1330:	flash->src_clk = res->start * 1000000;
+drivers/mtd/devices/jz_sfc.c:1332:	if (clk_get_rate(flash->clk) >= flash->src_clk) {
+drivers/mtd/devices/jz_sfc.c:1333:		clk_set_rate(flash->clk, flash->src_clk);
+drivers/mtd/devices/jz_sfc.c:1335:		clk_set_rate(flash->clk, flash->src_clk);
+drivers/mtd/devices/jz_sfc.c:1338:	clk_enable(flash->clk);
+drivers/mtd/devices/jz_sfc.c:1339:	clk_enable(flash->clk_gate);
+drivers/mtd/devices/jz_sfc.c:1342:	init_completion(&flash->done);
+drivers/mtd/devices/jz_sfc.c:1343:	spin_lock_init(&flash->lock_status);
+drivers/mtd/devices/jz_sfc.c:1344:	spin_lock_init(&flash->lock_rxtx);
+drivers/mtd/devices/jz_sfc.c:1345:	mutex_init(&flash->lock);
+drivers/mtd/devices/jz_sfc.c:1347://	flash->workqueue = create_singlethread_workqueue("sfc_rw_thread");
+drivers/mtd/devices/jz_sfc.c:1348://	INIT_WORK(&flash->rw_work,sfc_irq_work);
+drivers/mtd/devices/jz_sfc.c:1350:	flash->threshold = THRESHOLD;
+drivers/mtd/devices/jz_sfc.c:1352:	err = request_irq(flash->irq, jz_sfc_irq, 0, pdev->name, flash);
+drivers/mtd/devices/jz_sfc.c:1367:	flash->mtd.name     = "sfc_mtd";
+drivers/mtd/devices/jz_sfc.c:1368:	flash->mtd.owner    = THIS_MODULE;
+drivers/mtd/devices/jz_sfc.c:1369:	flash->mtd.type     = MTD_NORFLASH;
+drivers/mtd/devices/jz_sfc.c:1370:	flash->mtd.flags    = MTD_CAP_NORFLASH;
+drivers/mtd/devices/jz_sfc.c:1371:	flash->mtd.erasesize    = board_info->erasesize;
+drivers/mtd/devices/jz_sfc.c:1372:	flash->mtd.writesize    = board_info->pagesize;
+drivers/mtd/devices/jz_sfc.c:1373:	flash->addr_len     = board_info->addrsize;
+drivers/mtd/devices/jz_sfc.c:1374:	flash->mtd.size     = board_info->chipsize;
+drivers/mtd/devices/jz_sfc.c:1375:	flash->mtd._erase   = jz_spi_norflash_erase;
+drivers/mtd/devices/jz_sfc.c:1376:	flash->mtd._read    = jz_spi_norflash_read;
+drivers/mtd/devices/jz_sfc.c:1377:	flash->mtd._write   = jz_spi_norflash_write;
+drivers/mtd/devices/jz_sfc.c:1378:	flash->board_info   = board_info;
+drivers/mtd/devices/jz_sfc.c:1381:	printk("the flash->board_info->quad_mode = %x\n",flash->board_info->quad_mode->cmd_read);
+drivers/mtd/devices/jz_sfc.c:1388:	printk(KERN_INFO "JZ SFC Controller for SFC channel %d driver register\n",flash->chnl);
+drivers/mtd/devices/jz_sfc.c:1390:	ret = mtd_device_parse_register(&flash->mtd, jz_probe_types, NULL, jz_mtd_partition, num_partition_info);
+drivers/mtd/devices/jz_sfc.c:1393:		dev_set_drvdata(flash->dev, NULL);
+drivers/mtd/devices/jz_sfc.c:1410:	clk_put(flash->clk_gate);
+drivers/mtd/devices/jz_sfc.c:1411:	clk_put(flash->clk);
+drivers/mtd/devices/jz_sfc.c:1413:	free_irq(flash->irq, flash);
+drivers/mtd/devices/jz_sfc.c:1415:	iounmap(flash->iomem);
+drivers/mtd/devices/jz_sfc.c:1418:	release_resource(flash->ioarea);
+drivers/mtd/devices/jz_sfc.c:1419:	kfree(flash->ioarea);
+drivers/mtd/devices/jz_sfc.c:1428:	clk_disable(flash->clk_gate);
+drivers/mtd/devices/jz_sfc.c:1429:	clk_put(flash->clk_gate);
+drivers/mtd/devices/jz_sfc.c:1431:	clk_disable(flash->clk);
+drivers/mtd/devices/jz_sfc.c:1432:	clk_put(flash->clk);
+drivers/mtd/devices/jz_sfc.c:1434:	free_irq(flash->irq, flash);
+drivers/mtd/devices/jz_sfc.c:1436:	iounmap(flash->iomem);
+drivers/mtd/devices/jz_sfc.c:1438:	release_mem_region(flash->resource->start, resource_size(flash->resource));
+drivers/mtd/devices/jz_sfc.c:1451:	spin_lock_irqsave(&flash->lock_status, flags);
+drivers/mtd/devices/jz_sfc.c:1452:	flash->status |= STATUS_SUSPND;
+drivers/mtd/devices/jz_sfc.c:1453:	disable_irq(flash->irq);
+drivers/mtd/devices/jz_sfc.c:1454:	spin_unlock_irqrestore(&flash->lock_status, flags);
+drivers/mtd/devices/jz_sfc.c:1456:	clk_disable(flash->clk_gate);
+drivers/mtd/devices/jz_sfc.c:1458:	clk_disable(flash->clk);
+drivers/mtd/devices/jz_sfc.c:1468:	clk_enable(flash->clk);
+drivers/mtd/devices/jz_sfc.c:1470:	clk_enable(flash->clk_gate);
+drivers/mtd/devices/jz_sfc.c:1472:	spin_lock_irqsave(&flash->lock_status, flags);
+drivers/mtd/devices/jz_sfc.c:1473:	flash->status &= ~STATUS_SUSPND;
+drivers/mtd/devices/jz_sfc.c:1474:	enable_irq(flash->irq);
+drivers/mtd/devices/jz_sfc.c:1475:	spin_unlock_irqrestore(&flash->lock_status, flags);
+drivers/mtd/devices/jz_sfc.c:1485:	spin_lock_irqsave(&flash->lock_status, flags);
+drivers/mtd/devices/jz_sfc.c:1486:	flash->status |= STATUS_SUSPND;
+drivers/mtd/devices/jz_sfc.c:1487:	disable_irq(flash->irq);
+drivers/mtd/devices/jz_sfc.c:1488:	spin_unlock_irqrestore(&flash->lock_status, flags);
+drivers/mtd/devices/jz_sfc.c:1490:	clk_disable(flash->clk_gate);
+drivers/mtd/devices/jz_sfc.c:1492:	clk_disable(flash->clk);
+drivers/mtd/devices/jz_spi_norflash.c:71:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/devices/jz_spi_norflash.c:106:	ret = spi_write(flash->spi, command, 1);
+drivers/mtd/devices/jz_spi_norflash.c:113:	ret = spi_write(flash->spi, command, 2);
+drivers/mtd/devices/jz_spi_norflash.c:123:	ret = spi_write(flash->spi, command, 1);
+drivers/mtd/devices/jz_spi_norflash.c:149:	switch(flash->mtd.erasesize) {
+drivers/mtd/devices/jz_spi_norflash.c:164:	ret = spi_write(flash->spi, command, 4);
+drivers/mtd/devices/jz_spi_norflash.c:198:	mutex_lock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:204:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:213:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:221:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:258:	mutex_lock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:264:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:268:	ret = spi_sync(flash->spi, &message);
+drivers/mtd/devices/jz_spi_norflash.c:277:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:298:	mutex_lock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:311:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:335:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:339:		ret = spi_sync(flash->spi, &message);
+drivers/mtd/devices/jz_spi_norflash.c:354:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:383:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:387:		ret = spi_sync(flash->spi, &message);
+drivers/mtd/devices/jz_spi_norflash.c:397:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:476:	flash->spi = spi;
+drivers/mtd/devices/jz_spi_norflash.c:477:	mutex_init(&flash->lock);
+drivers/mtd/devices/jz_spi_norflash.c:480:	flash->mtd.name		= dev_name(&spi->dev);
+drivers/mtd/devices/jz_spi_norflash.c:481:	flash->mtd.owner	= THIS_MODULE;
+drivers/mtd/devices/jz_spi_norflash.c:482:	flash->mtd.type		= MTD_NORFLASH;
+drivers/mtd/devices/jz_spi_norflash.c:483:	flash->mtd.flags	= MTD_CAP_NORFLASH;
+drivers/mtd/devices/jz_spi_norflash.c:484:	flash->mtd.erasesize	= pdata->erasesize;
+drivers/mtd/devices/jz_spi_norflash.c:485:	flash->mtd.writesize	= pdata->pagesize;
+drivers/mtd/devices/jz_spi_norflash.c:486:	flash->mtd.size		= pdata->chipsize;
+drivers/mtd/devices/jz_spi_norflash.c:487:	flash->mtd._erase	= jz_spi_norflash_erase;
+drivers/mtd/devices/jz_spi_norflash.c:488:	flash->mtd._read	= jz_spi_norflash_read;
+drivers/mtd/devices/jz_spi_norflash.c:489:	flash->mtd._write 	= jz_spi_norflash_write;
+drivers/mtd/devices/jz_spi_norflash.c:493:	ret = mtd_device_parse_register(&flash->mtd, jz_probe_types, NULL, jz_mtd_partition, num_partition_info);
+drivers/mtd/devices/jz_spi_norflash.c:513:	ret = mtd_device_unregister(&flash->mtd);
+drivers/mtd/devices/sst25l.c:88:	err = spi_sync(flash->spi, &m);
+drivers/mtd/devices/sst25l.c:102:	err = spi_write(flash->spi, command, 1);
+drivers/mtd/devices/sst25l.c:107:	err = spi_write(flash->spi, command, 1);
+drivers/mtd/devices/sst25l.c:113:	err = spi_write(flash->spi, command, 2);
+drivers/mtd/devices/sst25l.c:160:	err = spi_write(flash->spi, command, 4);
+drivers/mtd/devices/sst25l.c:187:	mutex_lock(&flash->lock);
+drivers/mtd/devices/sst25l.c:191:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/sst25l.c:198:			mutex_unlock(&flash->lock);
+drivers/mtd/devices/sst25l.c:200:			dev_err(&flash->spi->dev, "Erase failed\n");
+drivers/mtd/devices/sst25l.c:207:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/sst25l.c:239:	mutex_lock(&flash->lock);
+drivers/mtd/devices/sst25l.c:244:		mutex_unlock(&flash->lock);
+drivers/mtd/devices/sst25l.c:248:	spi_sync(flash->spi, &message);
+drivers/mtd/devices/sst25l.c:253:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/sst25l.c:267:	mutex_lock(&flash->lock);
+drivers/mtd/devices/sst25l.c:284:		ret = spi_write(flash->spi, command, 5);
+drivers/mtd/devices/sst25l.c:300:			ret = spi_write(flash->spi, command, 2);
+drivers/mtd/devices/sst25l.c:312:	mutex_unlock(&flash->lock);
+drivers/mtd/devices/sst25l.c:371:	flash->spi = spi;
+drivers/mtd/devices/sst25l.c:372:	mutex_init(&flash->lock);
+drivers/mtd/devices/sst25l.c:377:		flash->mtd.name = data->name;
+drivers/mtd/devices/sst25l.c:379:		flash->mtd.name = dev_name(&spi->dev);
+drivers/mtd/devices/sst25l.c:381:	flash->mtd.type		= MTD_NORFLASH;
+drivers/mtd/devices/sst25l.c:382:	flash->mtd.flags	= MTD_CAP_NORFLASH;
+drivers/mtd/devices/sst25l.c:383:	flash->mtd.erasesize	= flash_info->erase_size;
+drivers/mtd/devices/sst25l.c:384:	flash->mtd.writesize	= flash_info->page_size;
+drivers/mtd/devices/sst25l.c:385:	flash->mtd.writebufsize	= flash_info->page_size;
+drivers/mtd/devices/sst25l.c:386:	flash->mtd.size		= flash_info->page_size * flash_info->nr_pages;
+drivers/mtd/devices/sst25l.c:387:	flash->mtd._erase	= sst25l_erase;
+drivers/mtd/devices/sst25l.c:388:	flash->mtd._read		= sst25l_read;
+drivers/mtd/devices/sst25l.c:389:	flash->mtd._write 	= sst25l_write;
+drivers/mtd/devices/sst25l.c:392:		 (long long)flash->mtd.size >> 10);
+drivers/mtd/devices/sst25l.c:396:	      flash->mtd.name,
+drivers/mtd/devices/sst25l.c:397:	      (long long)flash->mtd.size, (long long)(flash->mtd.size >> 20),
+drivers/mtd/devices/sst25l.c:398:	      flash->mtd.erasesize, flash->mtd.erasesize / 1024,
+drivers/mtd/devices/sst25l.c:399:	      flash->mtd.numeraseregions);
+drivers/mtd/devices/sst25l.c:402:	ret = mtd_device_parse_register(&flash->mtd, NULL, NULL,
+drivers/mtd/devices/sst25l.c:419:	ret = mtd_device_unregister(&flash->mtd);
+Binary file drivers/mtd/devices/built-in.o matches
+Binary file drivers/mtd/built-in.o matches
+drivers/scsi/ibmmca.c:1935:			   so flash-up the LED/display. */
+drivers/net/skfp/h/skfbi.h:335:#define B2_FAR		0x0110	/* 32 bit Flash-Prom Address Register/Counter */
+drivers/net/skfp/h/skfbi.h:336:#define B2_FDP		0x0114	/*  8 bit Flash-Prom Data Port */
+drivers/net/skfp/h/skfbi.h:634:/*	B2_FAR		32 bit Flash-Prom Address Register/Counter */
+drivers/net/skfp/h/skfbi.h:637:/*	B2_FDP		8 bit Flash-Prom Data Port */
+drivers/net/bnx2.c:4240:			    (flash->config1 & FLASH_BACKUP_STRAP_MASK)) {
+drivers/net/bnx2.c:4258:			if ((val & mask) == (flash->strapping & mask)) {
+drivers/net/bnx2.c:4269:				REG_WR(bp, BNX2_NVM_CFG1, flash->config1);
+drivers/net/bnx2.c:4270:				REG_WR(bp, BNX2_NVM_CFG2, flash->config2);
+drivers/net/bnx2.c:4271:				REG_WR(bp, BNX2_NVM_CFG3, flash->config3);
+drivers/net/bnx2.c:4272:				REG_WR(bp, BNX2_NVM_WRITE1, flash->write1);
+drivers/input/touchscreen/gt9xx_cone/gt9xx_update.c:424:    /*|-----FLASH-----RAM-----|
+Binary file drivers/built-in.o matches
+drivers/usb/storage/shuttle_usbat.c:976: * Determine whether we are controlling a flash-based reader/writer,
+Binary file si/x1000.IAB matches
+arch/arm/mach-sa1100/generic.c:299:	flash->name = "sa1100";
+arch/powerpc/kernel/rtas_flash.c:68:/* ibm,manage-flash-image operation tokens */
+arch/powerpc/kernel/rtas_flash.c:367:		rc = rtas_call(rtas_token("ibm,manage-flash-image"), 1, 
+arch/powerpc/kernel/rtas_flash.c:428:	int token = rtas_token("ibm,validate-flash-image");
+arch/powerpc/kernel/rtas_flash.c:561:	update_token = rtas_token("ibm,update-flash-64-and-reboot");
+arch/powerpc/kernel/rtas_flash.c:563:		printk(KERN_ALERT "FLASH: ibm,update-flash-64-and-reboot "
+arch/powerpc/kernel/rtas_flash.c:703:	if (rtas_token("ibm,update-flash-64-and-reboot") ==
+arch/powerpc/kernel/rtas_flash.c:717:	rc = initialize_flash_pde_data("ibm,update-flash-64-and-reboot",
+arch/powerpc/kernel/rtas_flash.c:731:	rc = initialize_flash_pde_data("ibm,update-flash-64-and-reboot",
+arch/powerpc/kernel/rtas_flash.c:744:	rc = initialize_flash_pde_data("ibm,validate-flash-image",
+arch/powerpc/kernel/rtas_flash.c:757:	rc = initialize_flash_pde_data("ibm,manage-flash-image",
+arch/sh/include/mach-se/mach/se7722.h:22:#define PA_FROM		0xa1000000	/* Flash-ROM */
+arch/sh/include/mach-se/mach/se7722.h:23:#define PA_FROM_SIZE	0x01000000	/* Flash-ROM size 16M byte */
+arch/sh/include/mach-se/mach/se7780.h:21:#define PA_FROM		0xa1000000	/* Flash-ROM */
+arch/sh/include/mach-se/mach/se7780.h:22:#define PA_FROM_SIZE	0x01000000	/* Flash-ROM size 16M byte */
+arch/sh/include/mach-se/mach/se7780.h:32:#define PA_EXT_FLASH	PA_EXT4		/* Expansion Flash-ROM */
+arch/sh/include/mach-se/mach/se7721.h:20:#define PA_FROM		0xa1000000	/* Flash-ROM */
+arch/sh/include/mach-se/mach/se7721.h:21:#define PA_FROM_SIZE	0x01000000	/* Flash-ROM size 16M byte */
+arch/sh/include/mach-common/mach/sdk7780.h:20:#define PA_FROM			0xa0800000	/* Flash-ROM */
+arch/sh/include/mach-common/mach/sdk7780.h:21:#define PA_FROM_SIZE	0x00400000	/* Flash-ROM size 4M byte */
+arch/cris/Kconfig:266:	bool "Axis flash-map support"
+arch/cris/boot/rescue/head_v10.S:3: * flash-memory. when it starts, it checks a partition
+arch/cris/boot/rescue/head_v10.S:12: * receive a flash-loader and new flash image. we dont include
+arch/cris/arch-v32/drivers/axisflashmap.c:227: * chips in that order (because the amd_flash-driver is faster).
+arch/cris/arch-v32/drivers/Kconfig:400:	bool "Axis flash-map support"
+arch/cris/arch-v10/drivers/axisflashmap.c:191: * chips in that order (because the amd_flash-driver is faster).
+arch/cris/arch-v10/kernel/head.S:198:	;; between the physical start of the flash and the flash-image start,
+Binary file vmlinux.o matches
+include/linux/ssb/ssb_driver_chipcommon.h:495:/** Flash-specific control/status values */
+Documentation/hwmon/max16065:33:[From datasheets] The MAX16065/MAX16066 flash-configurable system managers
+Documentation/hwmon/max16065:39:The MAX16067 flash-configurable system manager monitors and sequences multiple
+Documentation/hwmon/max16065:42:The MAX16068 flash-configurable system manager monitors and manages up to six
+Documentation/hwmon/max16065:45:The MAX16070/MAX16071 flash-configurable system monitors supervise multiple
