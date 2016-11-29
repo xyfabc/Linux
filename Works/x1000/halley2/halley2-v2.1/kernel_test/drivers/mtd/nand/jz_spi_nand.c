@@ -207,6 +207,7 @@ static int jz_spi_nandflash_erase(struct mtd_info *mtd, struct erase_info *instr
 		addr += mtd->erasesize;
 	}
 	instr->state = MTD_ERASE_DONE;
+
 	ret=0;
 nandflash_erase:
 	mutex_unlock(&flash->lock);

@@ -1042,6 +1042,7 @@ static int jz_sfcnand_erase(struct mtd_info *mtd, struct erase_info *instr)
 static int jz_sfc_nandflash_block_markbad(struct mtd_info *mtd, loff_t ofs)
 {
 	struct nand_chip *chip = mtd->priv;
+
 	uint8_t buf[2] = { 0, 0 };
 	int  res, ret = 0, i = 0;
 	int write_oob = !(chip->bbt_options & NAND_BBT_NO_OOB_BBM);

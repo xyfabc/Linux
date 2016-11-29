@@ -615,6 +615,7 @@ static void __init resource_init(void)
 
 void __init setup_arch(char **cmdline_p)
 {
+	HANVON_DBG("+++++++++");
 	cpu_probe();
 	prom_init();
 

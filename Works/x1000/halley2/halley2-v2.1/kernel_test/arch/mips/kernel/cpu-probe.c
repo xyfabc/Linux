@@ -1249,7 +1249,7 @@ __cpuinit void cpu_report(void)
 {
 	struct cpuinfo_mips *c = &current_cpu_data;
 
-	printk(KERN_INFO "CPU revision is: %08x (%s)\n",
+	printk(KERN_INFO "CPU revision is:: %08x (%s)\n",
 	       c->processor_id, cpu_name_string());
 	if (c->options & MIPS_CPU_FPU)
 		printk(KERN_INFO "FPU revision is: %08x\n", c->fpu_id);

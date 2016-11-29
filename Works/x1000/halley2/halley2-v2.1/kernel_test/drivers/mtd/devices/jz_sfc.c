@@ -38,7 +38,7 @@
 
 
 #define SWAP_BUF_SIZE (4 * 1024)
-#define SFC_DEBUG
+//#define SFC_DEBUG
 #define GET_PHYADDR(a)                                          \
 ({                                              \
 	 unsigned int v;                                        \
